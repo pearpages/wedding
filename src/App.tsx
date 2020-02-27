@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import { appendScriptInTheDOM } from "./helpers";
+import Navigation from "./components/Navigation";
 
 class App extends Component {
   componentDidMount() {
@@ -35,7 +36,11 @@ class App extends Component {
     }, 100);
   }
   render() {
-    return <div id="main_container"></div>;
+    return (
+      <div id="main_container">
+        <Navigation />
+      </div>
+    );
   }
 }
 
