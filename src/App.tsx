@@ -6,6 +6,7 @@ import Title from "./components/Title";
 import Slider from "./components/Slider";
 import Countdown from "./components/Countdown";
 import About from "./components/About";
+import Carousel from "./components/Carousel";
 
 class App extends Component {
   componentDidMount() {
@@ -47,6 +48,7 @@ class App extends Component {
         <Slider />
         <Countdown />
         <About />
+        <Carousel />
       </>
     );
   }
