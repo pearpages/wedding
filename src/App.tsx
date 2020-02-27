@@ -7,6 +7,9 @@ import Slider from "./components/Slider";
 import Countdown from "./components/Countdown";
 import About from "./components/About";
 import Carousel from "./components/Carousel";
+import Blog from "./components/Blog";
+import Locations from "./components/Locations";
+import Footer from "./components/Footer";
 
 class App extends Component {
   componentDidMount() {
@@ -49,6 +52,9 @@ class App extends Component {
         <Countdown />
         <About />
         <Carousel />
+        <Blog />
+        <Locations />
+        <Footer />
       </>
     );
   }
