@@ -38,8 +38,9 @@ class App extends Component {
         appendScriptInTheDOM("js/jquery.countdown.js");
         appendScriptInTheDOM("js/init2.js");
         clearInterval(done);
+        console.log("all external dependencies loaded");
       } catch (e) {
-        console.warn("trying to initialize before jquery lodaded");
+        console.log("trying to initialize before jquery lodaded");
       }
     }, 100);
   }
