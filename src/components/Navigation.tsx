@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class Navigation extends Component {
   render() {
@@ -14,9 +15,9 @@ class Navigation extends Component {
         <nav className="menu">
           <ul id="main_menu">
             <li>
-              <a className="selected" href="index.html">
+              <NavLink activeClassName="selected" to="/">
                 HOME
-              </a>
+              </NavLink>
             </li>
             <li>
               <a href="page.html">THE WEDDING</a>

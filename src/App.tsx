@@ -1,15 +1,11 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { appendScriptInTheDOM } from "./helpers";
 import Navigation from "./components/Navigation";
-import Title from "./components/Title";
-import Slider from "./components/Slider";
-import Countdown from "./components/Countdown";
-import About from "./components/About";
-import Carousel from "./components/Carousel";
-import Blog from "./components/Blog";
 import Locations from "./components/Locations";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
 class App extends Component {
   componentDidMount() {
@@ -46,17 +42,17 @@ class App extends Component {
   }
   render() {
     return (
-      <>
+      <Router>
         <Navigation />
-        <Title />
-        <Slider />
-        <Countdown />
-        <About />
-        <Carousel />
-        <Blog />
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+
         <Locations />
         <Footer />
-      </>
+      </Router>
     );
   }
 }
