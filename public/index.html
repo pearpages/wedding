@@ -182,59 +182,7 @@
     </div>
 
   </div>
-  <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-  <!-- SLIDER -->
-  <script type="text/javascript" src="js/jquery.skippr.js"></script>
-  <script>
 
-    $(".footer").load("./partials/footer.html");
-    $(".home_bottom").load("./partials/locations.html");
-    $(document).ready(function () {
-      "use strict";
-      $("#random").skippr({
-        navType: 'bubble',
-        transition: 'fade',
-        autoPlay: true,
-        autoPlayDuration: 4000,
-        speed: 1000,
-        arrows: false
-      });
-      $("#weddingcarousel").owlCarousel({
-        items: 4,
-        itemsScaleUp: true,
-        navigationText: ["prev", "next"]
-      })
-    });
-  </script>
-  <script src="js/owl.carousel.js"></script>
-  <!-- DropDownMenu -->
-  <script type="text/javascript" src="js/menu.js"></script>
-  <script type="text/javascript" src="js/effects.js"></script>
-  <script type="text/javascript" src="js/jquery.arctext.js"></script>
-  <script type="text/javascript" src="js/jquery.countdown.js"></script>
-  <script type="text/javascript">
-    var $ = jQuery.noConflict();
-    $(window).load(function () {
-      "use strict";
-      var $titlefront = $('.title_front').hide();
-      var $titleunder = $('.title_under').hide();
-      var $bestman = $('.bestman span').hide();
-      var $footernames = $('.footer_names').hide();
-
-      $titlefront.show().arctext({ radius: 250 });
-      $titleunder.show().arctext({ radius: 180, dir: -1 });
-      $bestman.show().arctext({ radius: 80 });
-      $footernames.show().arctext({ radius: 120, dir: -1 });
-
-      $('#defaultCountdown').countdown({ until: new Date(2020, 9, 12, 12), format: 'y-o-d-h' });
-
-    });
-  </script>
-  <script type="text/javascript">
-    var main_menu = new main_menu.dd("main_menu");
-    main_menu.init("main_menu", "menuhover");
-  </script>
 </body>
 
 </html>
