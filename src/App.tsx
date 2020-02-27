@@ -1,15 +1,9 @@
 import React, { Component } from "react";
 
-function appendScriptInTheDOM(path: string) {
-  const script = document.createElement("script");
-  script.src = path;
-
-  document.body.appendChild(script);
-}
+import { appendScriptInTheDOM } from "./helpers";
 
 class App extends Component {
   componentDidMount() {
-    appendScriptInTheDOM("js/jquery-1.11.1.min.js");
     appendScriptInTheDOM("js/jquery.skippr.js");
     appendScriptInTheDOM("js/init.js");
 
