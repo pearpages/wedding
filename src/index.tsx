@@ -12,7 +12,7 @@ appendScriptInTheDOM("js/jquery-1.11.1.min.js", () => {
   });
 });
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("main_container"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
