@@ -8,7 +8,7 @@ Last updated:	12 October 2016
 Template:	Wedding Bells HTML,CSS Template
 -------------------------------------------------------------------*/
 
-/*----------------------------------------------------------------- 
+/*-----------------------------------------------------------------
 [Table of Contents]
 
 1. RESET
@@ -22,7 +22,7 @@ Template:	Wedding Bells HTML,CSS Template
 	5-2. SLIDER
 	5-3. COUNTDOWN
 	5-4. ABOUT CONTENT
-	5-5. CAROUSEL 
+	5-5. CAROUSEL
 	5-6. HOME BOTTOM
 6. BLOG
 	6-1. LATEST POSTS
@@ -49,7 +49,7 @@ Template:	Wedding Bells HTML,CSS Template
 
 /*===============================================*/
 /* 2. GENERAL		 						 */
-/*===============================================*/	
+/*===============================================*/
 html, body{
 	height: 100%;
 	width: 100%;
@@ -105,7 +105,7 @@ a.more{
 }
 /*---------------------------*/
 /* 2-1. HEADINGS             */
-/*---------------------------*/	
+/*---------------------------*/
 h1, h2, h3, h4, h5, h6{
 	font-weight:300;
 	letter-spacing:-0.5px;
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
 	font-size:60px;
-	
+
 }
 h2{
 	font-size:26px;
@@ -138,7 +138,7 @@ h6{
 }
 /*---------------------------*/
 /* 2-2. GOOGLE FONTS     	 */
-/*---------------------------*/	
+/*---------------------------*/
 h1, h2, h3, h4, h5, h6, ul#main_menu li a, .title_front, .title_date, .title_under, span.countdown_amount, .rsvp_button{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6, ul#main_menu li a, .title_front, .title_date, .title_und
 
 /*===============================================*/
 /* 3. LAYOUT    		 						 */
-/*===============================================*/	
+/*===============================================*/
 #main_container{
 	margin:auto;
 	width:100%;
@@ -309,7 +309,7 @@ ul#main_menu ul li a:hover {
 /*===============================================*/
 /*---------------------------*/
 /* 5-1. HOME PAGE COUPLE NAMES 	 */
-/*---------------------------*/	
+/*---------------------------*/
 .title_container{
 	text-align:center;
 	position:absolute;
@@ -352,7 +352,7 @@ span.swirl_right{
 }
 /*---------------------------*/
 /* 5-2. SLIDER 	 */
-/*---------------------------*/	
+/*---------------------------*/
 .slider_container {
 	width: 100%;
 	height:85%;
@@ -454,7 +454,7 @@ span.swirl_right{
 }
 /*---------------------------*/
 /* 5-3. COUNTDOWN 	 */
-/*---------------------------*/	
+/*---------------------------*/
 .countdown_container{
 	width:100%;
 	height:auto;
@@ -745,7 +745,7 @@ span.subtitle{
 
 /*===============================================*/
 /* 6. BLOG	 						 */
-/*===============================================*/	
+/*===============================================*/
 
 /*---------------------------*/
 /* 6-1. LATEST POSTS 	 */
@@ -1044,7 +1044,8 @@ img.avatar{
 	background:url(images/header.jpg) no-repeat center center;
 }
 .contact_header{
-	background:url(images/header.jpg) no-repeat center center;
+	background:url(images/slider/slide3.jpg) no-repeat top center;
+	background-size: cover;
 }
 .page_header_trans{
 	background:url(images/trans_black.png) repeat;
@@ -1489,7 +1490,7 @@ span.swirl_right_transparent{
 @media screen and (max-width: 680px) {
 	.page_header_trans{
 	padding:100px 0 60px 0;
-	
+
 	}
 	.page_header_title p{
 	text-align:center;
@@ -1765,7 +1766,7 @@ span.swirl_right_transparent{
 	}
 	span.countdown_amount {
 	font-size:22px;
-	
+
 	}
 	.about_content{
 	padding:40px 0 0 0;
@@ -1856,7 +1857,7 @@ span.swirl_right_transparent{
 	}
 	.footer_menu li{
 	margin:0px 0 10px 0;
-	
+
 	}
 	.form_row, .form_row_full {
 	float:left;
