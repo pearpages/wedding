@@ -12,7 +12,7 @@ $(window).load(function() {
   $footernames.show().arctext({ radius: 120, dir: -1 });
 
   $("#defaultCountdown").countdown({
-    until: new Date(2020, 9, 12, 12),
+    until: new Date(2020, 9 - 1, 12, 12),
     format: "y-o-d-h"
   });
 });
