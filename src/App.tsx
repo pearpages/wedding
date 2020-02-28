@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation";
 import Locations from "./components/Locations";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import NoMatch from "./pages/NoMatch";
 
 class App extends Component {
   componentDidMount() {
@@ -45,8 +46,11 @@ class App extends Component {
       <Router>
         <Navigation />
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="*">
+            <NoMatch />
           </Route>
         </Switch>
 

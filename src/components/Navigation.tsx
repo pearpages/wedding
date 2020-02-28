@@ -15,7 +15,7 @@ class Navigation extends Component {
         <nav className="menu">
           <ul id="main_menu">
             <li>
-              <NavLink activeClassName="selected" to="/">
+              <NavLink exact activeClassName="selected" to="/">
                 HOME
               </NavLink>
             </li>
