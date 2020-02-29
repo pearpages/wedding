@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import TextContext from "../core/TextContext";
 
 export default function Title(
   { hasBirds }: { hasBirds?: boolean } = { hasBirds: false }
 ) {
+  const texts: { [key: string]: string } = useContext(TextContext);
   return (
     <div className="title_container">
       <div className="title_front">WE ARE GETTING MARRIED</div>
@@ -12,7 +14,7 @@ export default function Title(
         </div>
       ) : null}
       <div className="title">
-        Marta <span>&amp;</span> Pere
+        {texts.bride} <span>&amp;</span> {texts.groom}
       </div>
       <div className="title_date">
         <span className="swirl_left">

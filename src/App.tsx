@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import translations from "./translations.json";
+import { TextProvider } from "./core/TextContext";
 import { appendScriptInTheDOM } from "./helpers";
 import Navigation from "./components/Navigation";
 import Locations from "./components/Locations";
@@ -43,20 +45,22 @@ class App extends Component {
   }
   render() {
     return (
-      <Router>
-        <Navigation />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="*">
-            <NoMatch />
-          </Route>
-        </Switch>
+      <TextProvider value={translations}>
+        <Router>
+          <Navigation />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="*">
+              <NoMatch />
+            </Route>
+          </Switch>
 
-        <Locations />
-        <Footer />
-      </Router>
+          <Locations />
+          <Footer />
+        </Router>
+      </TextProvider>
     );
   }
 }
