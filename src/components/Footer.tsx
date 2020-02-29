@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
+import { NavLink, Link } from "react-router-dom";
+
 import TextContext from "../core/TextContext";
-import { NavLink } from "react-router-dom";
 
 function Footer() {
   const texts: { [key: string]: any } = useContext(TextContext);
@@ -20,39 +21,39 @@ function Footer() {
         <div className="footer_socials">
           <ul>
             <li>
-              <a href="#">
+              <Link to="/">
                 <img src="images/social/twitter.png" alt="" title="" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <img src="images/social/facebook.png" alt="" title="" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <img src="images/social/pinterest.png" alt="" title="" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <img src="images/social/vimeo.png" alt="" title="" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <img src="images/social/google.png" alt="" title="" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <img src="images/social/instagram.png" alt="" title="" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#">
+              <Link to="/">
                 <img src="images/social/youtube.png" alt="" title="" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -64,24 +65,24 @@ function Footer() {
               </NavLink>
             </li>
             <li>
-              <a href="page.html">THE WEDDING</a>
+              <NavLink to="/">THE WEDDING</NavLink>
             </li>
             <li>
-              <a href="rsvp.html">RSVP</a>
+              <NavLink to="/">RSVP</NavLink>
             </li>
             <li>
-              <a href="contact.html">GET IN TOUCH</a>
+              <NavLink to="/">GET IN TOUCH</NavLink>
             </li>
             <li>
-              <a
+              <span
                 onClick={() =>
                   jQuery("html, body").animate({ scrollTop: 0 }, "slow")
                 }
-                className="gotop"
+                className="gotop link"
                 title="Go on top"
               >
                 TOP
-              </a>
+              </span>
             </li>
           </ul>
         </nav>
