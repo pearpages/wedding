@@ -5,9 +5,10 @@ export default function Title(
   { hasBirds }: { hasBirds?: boolean } = { hasBirds: false }
 ) {
   const texts: { [key: string]: any } = useContext(TextContext);
+  const title = texts.title;
   return (
     <div className="title_container">
-      <div className="title_front">WE ARE GETTING MARRIED</div>
+      <div className="title_front">{title.title}</div>
       {hasBirds ? (
         <div className="love_birds" style={{ height: "40px" }}>
           <img src="images/birds_icon.png" alt="" title="" />
@@ -18,10 +19,10 @@ export default function Title(
       </div>
       <div className="title_date">
         <span className="swirl_left">
-          <span className="swirl_right">12.09.2020</span>
+          <span className="swirl_right">{texts.global.date}</span>
         </span>
       </div>
-      <div className="title_under">SAVE THE DATE</div>
+      <div className="title_under">{title.saveTheDate}</div>
     </div>
   );
 }

@@ -1,7 +1,12 @@
 {
   "global": {
     "bride": "Marta",
-    "groom": "Pere"
+    "groom": "Pere",
+    "date": "12.09.2020"
+  },
+  "title": {
+    "title": "WE ARE GETTING MARRIED",
+    "saveTheDate": "SAVE THE DATE"
   },
   "about": {
     "moreAbout": "MORE ABOUT",
