@@ -1,3 +1,15 @@
+|Feature|Service|
+|---|---|
+|Domain|https://www.godaddy.com/|
+|Email|https://www.mailgun.com/|
+|CDN|https://cloudinary.com/|
+|DNS|https://www.cloudflare.com/|
+|Backend|https://www.heroku.com/|
+|FE hosting |https://www.heroku.com/|
+|Persistance|Heroku MongoDB mLab|
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
