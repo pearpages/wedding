@@ -14,7 +14,7 @@
 |---|---|
 |Domain|https://www.godaddy.com/|
 |Email|https://www.mailgun.com/|
-|CDN|https://cloudinary.com/|
+|CDN|AWS S3, AWS CloudFront and https://cloudinary.com/|
 |DNS|https://www.cloudflare.com/|
 |Backend|https://www.heroku.com/|
 |FE hosting |https://www.heroku.com/|
