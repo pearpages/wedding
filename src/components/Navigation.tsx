@@ -5,12 +5,12 @@ class Navigation extends Component {
   render() {
     return (
       <>
-        <a className="show_menu" href="#">
+        <span className="show_menu">
           <img src="images/mobile_menu_open.png" alt="" title="" />
-        </a>
-        <a className="hide_menu" href="#">
+        </span>
+        <span className="hide_menu">
           <img src="images/mobile_menu_close.png" alt="" title="" />
-        </a>
+        </span>
 
         <nav className="menu">
           <ul id="main_menu">
