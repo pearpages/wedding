@@ -7,13 +7,22 @@ class Slider extends Component {
         <div className="slider_trans_black"></div>
         <div id="random">
           <div
-            style={{ backgroundImage: "url(images/slider/slide1.jpg)" }}
+            style={{
+              backgroundImage:
+                "url(https://res.cloudinary.com/pearpages/image/upload/v1582936177/slide1_e4ddpy.jpg)"
+            }}
           ></div>
           <div
-            style={{ backgroundImage: "url(images/slider/slide2.jpg)" }}
+            style={{
+              backgroundImage:
+                "url(https://res.cloudinary.com/pearpages/image/upload/v1582936176/slide2_ma5nd6.jpg)"
+            }}
           ></div>
           <div
-            style={{ backgroundImage: "url(images/slider/slide3.jpg)" }}
+            style={{
+              backgroundImage:
+                "url(https://res.cloudinary.com/pearpages/image/upload/v1582936177/slide3_ewhgf3.jpg)"
+            }}
           ></div>
         </div>
       </div>
