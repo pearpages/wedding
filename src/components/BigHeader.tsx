@@ -1,19 +1,20 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class BigHeader extends Component<{
+export default function BigHeader({
+  title,
+  children
+}: {
   title: string;
-}> {
-  render() {
-    const { title, children } = this.props;
-    return (
-      <div className="page_header_photo general_header">
-        <div className="page_header_trans">
-          <div className="page_header_title">
-            <h1>{title}</h1>
-            {children}
-          </div>
+  children: JSX.Element;
+}) {
+  return (
+    <div className="page_header_photo general_header">
+      <div className="page_header_trans">
+        <div className="page_header_title">
+          <h1>{title}</h1>
+          {children}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
