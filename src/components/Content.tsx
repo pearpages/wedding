@@ -129,6 +129,7 @@ export default function Content() {
 
           <div id="map">
             <iframe
+              title="Wedding Location"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2866623.58643198!2d12.3155151!3d45.4408474!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1daf1d63d89%3A0x7ba3c6f0bd92102f!2sVene%C5%A3ia%2C+Italia!5e0!3m2!1sro!2sro!4v1414007562818"
               width="100%"
               height="500"
@@ -141,6 +142,7 @@ export default function Content() {
 
           <div className="videocontainer">
             <iframe
+              title="video"
               width="100%"
               height="550"
               src="http://www.youtube.com/embed/bwJWYlS-wnE"
