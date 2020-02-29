@@ -1,33 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Slider extends Component {
-  render() {
-    return (
-      <div className="slider_container">
-        <div className="slider_trans_black"></div>
-        <div id="random">
+const images = [
+  "https://res.cloudinary.com/pearpages/image/upload/v1582936177/slide1_e4ddpy.jpg",
+  "https://res.cloudinary.com/pearpages/image/upload/v1582936176/slide2_ma5nd6.jpg",
+  "https://res.cloudinary.com/pearpages/image/upload/v1582936177/slide3_ewhgf3.jpg"
+];
+
+function Slider() {
+  return (
+    <div className="slider_container">
+      <div className="slider_trans_black"></div>
+      <div id="random">
+        {images.map((url, key) => (
           <div
+            key={key}
             style={{
-              backgroundImage:
-                "url(https://res.cloudinary.com/pearpages/image/upload/v1582936177/slide1_e4ddpy.jpg)"
+              backgroundImage: `url(${url})`
             }}
           ></div>
-          <div
-            style={{
-              backgroundImage:
-                "url(https://res.cloudinary.com/pearpages/image/upload/v1582936176/slide2_ma5nd6.jpg)"
-            }}
-          ></div>
-          <div
-            style={{
-              backgroundImage:
-                "url(https://res.cloudinary.com/pearpages/image/upload/v1582936177/slide3_ewhgf3.jpg)"
-            }}
-          ></div>
-        </div>
+        ))}
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Slider;
