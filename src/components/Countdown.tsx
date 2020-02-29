@@ -10,6 +10,7 @@ function Countdown() {
     <div className="countdown_container">
       <h2 className="centered_title">{texts.title}</h2>
       <div id="defaultCountdown"></div>
+      <div className="countdown_message">{texts.message}</div>
       <div className="rsvp_button">
         <span className="swirl_left_small">
           <span className="swirl_right_small">

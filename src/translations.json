@@ -6,7 +6,8 @@
   },
   "title": {
     "title": "WE ARE GETTING MARRIED",
-    "saveTheDate": "SAVE THE DATE"
+    "saveTheDate": "SAVE THE DATE",
+    "introText": "Estamos muy felices de anunciaros que ¡nos casamos! La celebración será el próximo sábado 12 de septiembre y hemos escogido celebrarlo en un lugar muy especial para nosotros, La Cerdanya."
   },
   "about": {
     "moreAbout": "MORE ABOUT",
@@ -24,6 +25,9 @@
     "maidOfHonor": "MAID OF HONOR",
     "button": "VIEW ALL BRIDESMAIDS AND GROOMSMEN'S"
   },
-  "countdown": { "title": "Countdown to Wedding Ceremony", "button": "RSVP" },
-  "introText": "Somos muy felices de anunciaros que ¡nos casamos! La celebración será el próximo sábado 12 de septiembre y hemos escogido celebrarlo en un lugar muy especial para nosotros, La Cerdanya."
+  "countdown": {
+    "title": "Countdown to Wedding Ceremony",
+    "message": "Nos encantaría que pudieseis venir a celebrarlo con nosotros y os agradeceríamos que nos confirmaseis vuestra asistencia lo antes posible. ",
+    "button": "RSVP"
+  }
 }

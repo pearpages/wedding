@@ -23,6 +23,7 @@ export default function Title(
         </span>
       </div>
       <div className="title_under">{title.saveTheDate}</div>
+      <div className="title_quote">{title.introText}</div>
     </div>
   );
 }
