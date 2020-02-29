@@ -1,5 +1,91 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+
 import TextContext from "../core/TextContext";
+
+function Persona({
+  subtitle,
+  title,
+  readMore,
+  text,
+  quote
+}: {
+  subtitle: string;
+  title: string;
+  readMore: string;
+  text: string;
+  quote: string;
+}) {
+  const social = [
+    { link: "/", img: "images/social/twitter.png" },
+    { link: "/", img: "images/social/facebook.png" },
+    { link: "/", img: "images/social/pinterest.png" }
+  ];
+  return (
+    <>
+      <span className="names_titles">{subtitle}</span>
+      <h2>{title}</h2>
+      <div className="about_pic_container">
+        <span className="about_picframe"></span>
+        <div className="about_social">
+          {social.map((s, key) => (
+            <Link key={key} to={s.link}>
+              <img src={s.img} alt="" title="" />
+            </Link>
+          ))}
+        </div>
+        <div className="about_pic">
+          <img src="images/image12.jpg" alt="" title="" />
+        </div>
+      </div>
+      <Link to="/" className="thumb_read_more">
+        {readMore}
+      </Link>
+      <p dangerouslySetInnerHTML={{ __html: text }} />
+      <span className="love_quote">{quote}</span>
+    </>
+  );
+}
+
+function Bride({ texts }: { texts: { [key: string]: any } }) {
+  const subtitle = texts.about.theBride;
+  const title = texts.global.bride;
+  const readMore = `${
+    texts.about.moreAbout
+  } ${texts.global.bride.toUpperCase()}`;
+  const text = texts.about.brideText;
+  const quote = texts.about.brideQuote;
+
+  return (
+    <Persona
+      subtitle={subtitle}
+      title={title}
+      readMore={readMore}
+      text={text}
+      quote={quote}
+    />
+  );
+}
+
+function Groom({ texts }: { texts: { [key: string]: any } }) {
+  const subtitle = texts.about.theGroom;
+  const title = texts.global.groom;
+  const readMore = `${
+    texts.about.moreAbout
+  } ${texts.global.groom.toUpperCase()}`;
+  const text = texts.about.groomText;
+  const quote = texts.about.groomQuote;
+
+  return (
+    <Persona
+      subtitle={subtitle}
+      title={title}
+      readMore={readMore}
+      text={text}
+      quote={quote}
+    />
+  );
+}
 
 function About() {
   const texts: { [key: string]: any } = useContext(TextContext);
@@ -8,56 +94,10 @@ function About() {
       <div className="about_topsign">&amp;</div>
       <div className="full_width_centered">
         <div className="left12_first">
-          <span className="names_titles">{texts.about.theBride}</span>
-          <h2>{texts.global.bride}</h2>
-          <div className="about_pic_container">
-            <span className="about_picframe"></span>
-            <div className="about_social">
-              <a href="#">
-                <img src="images/social/twitter.png" alt="" title="" />
-              </a>
-              <a href="#">
-                <img src="images/social/facebook.png" alt="" title="" />
-              </a>
-              <a href="#">
-                <img src="images/social/pinterest.png" alt="" title="" />
-              </a>
-            </div>
-            <div className="about_pic">
-              <img src="images/image12.jpg" alt="" title="" />
-            </div>
-          </div>
-          <a href="#" className="thumb_read_more">
-            {texts.about.moreAbout} {texts.global.bride.toUpperCase()}
-          </a>
-          <p dangerouslySetInnerHTML={{ __html: texts.about.brideText }} />
-          <span className="love_quote">{texts.about.brideQuote}</span>
+          <Bride texts={texts} />
         </div>
         <div className="left12_last">
-          <span className="names_titles">{texts.about.theGroom}</span>
-          <h2>{texts.global.groom}</h2>
-          <div className="about_pic_container">
-            <span className="about_picframe"></span>
-            <div className="about_social">
-              <a href="#">
-                <img src="images/social/twitter.png" alt="" title="" />
-              </a>
-              <a href="#">
-                <img src="images/social/facebook.png" alt="" title="" />
-              </a>
-              <a href="#">
-                <img src="images/social/pinterest.png" alt="" title="" />
-              </a>
-            </div>
-            <div className="about_pic">
-              <img src="images/image12_2.jpg" alt="" title="" />
-            </div>
-          </div>
-          <a href="#" className="thumb_read_more">
-            {texts.about.moreAbout} {texts.global.groom.toUpperCase()}
-          </a>
-          <p dangerouslySetInnerHTML={{ __html: texts.about.groomText }} />
-          <span className="love_quote">{texts.about.groomQuote}</span>
+          <Groom texts={texts} />
         </div>
 
         <div className="clear"></div>

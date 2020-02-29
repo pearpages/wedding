@@ -67,8 +67,8 @@ function Carousel() {
               <img src="images/image_14_3.jpg" alt="" title="" />
               <h3>LINDSEY REMY</h3>
             </div>
-            {people.map(person => (
-              <Profile {...person} />
+            {people.map((person, key) => (
+              <Profile key={key} {...person} />
             ))}
           </div>
           <div className="view_all_carousel">
