@@ -1,67 +1,83 @@
-import React, { Component } from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 
-class Carousel extends Component {
-  render() {
-    return (
-      <div className="carousel_container">
-        <div className="carousel_container_image">
-          <div className="full_width_carousel">
-            <h2>OUR BRIDESMAIDS AND GROOMSMEN'S</h2>
-            <span className="carousel_titles">
-              BEST MAN &amp; MAID OF HONOR
-            </span>
-            <div id="weddingcarousel" className="owl-carousel">
-              <div className="left14">
-                <div className="bestman">
-                  <span>BEST MAN</span>
-                  <img src="images/bestman.png" alt="" title="" />
-                </div>
-                <img src="images/image_14.jpg" alt="" title="" />
-                <h3>MIKE STEPHANSON</h3>
+import TextContext from "../core/TextContext";
+
+const people = [
+  {
+    src: "images/image_14_2.jpg",
+    name: "ELIZABETH LYN"
+  },
+  { className: "left14_last", src: "images/image_14_6.jpg", name: "STEVE KAY" },
+  {
+    src: "images/image_14_5.jpg",
+    name: "JOHN DOE"
+  },
+  {
+    src: "images/image_14_3.jpg",
+    name: "MAYA ELIOT"
+  },
+  {
+    src: "images/image_14_7.jpg",
+    name: "JOHANNA PASCAL"
+  },
+  { className: "left14_last", src: "images/image_14_8.jpg", name: "JOHN DOE" }
+];
+
+function Profile({
+  src = "images/image_14_2.jpg",
+  className = "left14",
+  name
+}: {
+  src: string;
+  className?: string;
+  name: string;
+}) {
+  return (
+    <div className={className}>
+      <img src={src} alt="" title="" />
+      <h3>{name}</h3>
+    </div>
+  );
+}
+
+function Carousel() {
+  const translations: { [key: string]: any } = useContext(TextContext);
+  const texts = translations.carousel;
+  return (
+    <div className="carousel_container">
+      <div className="carousel_container_image">
+        <div className="full_width_carousel">
+          <h2>{texts.title}</h2>
+          <span className="carousel_titles">{texts.subtitle}</span>
+          <div id="weddingcarousel" className="owl-carousel">
+            <div className="left14">
+              <div className="bestman">
+                <span>{texts.bestMan}</span>
+                <img src="images/bestman.png" alt="" title="" />
               </div>
-              <div className="left14">
-                <div className="bestman">
-                  <span>MAID OF HONOR</span>
-                  <img src="images/maidofhonor.png" alt="" title="" />
-                </div>
-                <img src="images/image_14_3.jpg" alt="" title="" />
-                <h3>LINDSEY REMY</h3>
-              </div>
-              <div className="left14">
-                <img src="images/image_14_2.jpg" alt="" title="" />
-                <h3>ELIZABETH LYN</h3>
-              </div>
-              <div className="left14_last">
-                <img src="images/image_14_6.jpg" alt="" title="" />
-                <h3>STEVE KAY</h3>
-              </div>
-              <div className="left14">
-                <img src="images/image_14_5.jpg" alt="" title="" />
-                <h3>JOHN DOE</h3>
-              </div>
-              <div className="left14">
-                <img src="images/image_14_3.jpg" alt="" title="" />
-                <h3>MAYA ELIOT</h3>
-              </div>
-              <div className="left14">
-                <img src="images/image_14_7.jpg" alt="" title="" />
-                <h3>JOHANNA PASCAL</h3>
-              </div>
-              <div className="left14_last">
-                <img src="images/image_14_8.jpg" alt="" title="" />
-                <h3>JOHN DOE</h3>
-              </div>
+              <img src="images/image_14.jpg" alt="" title="" />
+              <h3>MIKE STEPHANSON</h3>
             </div>
-            <div className="view_all_carousel">
-              <a href="bridesmaids.html">
-                VIEW ALL BRIDESMAIDS AND GROOMSMEN'S
-              </a>
+            <div className="left14">
+              <div className="bestman">
+                <span>{texts.maidOfHonor}</span>
+                <img src="images/maidofhonor.png" alt="" title="" />
+              </div>
+              <img src="images/image_14_3.jpg" alt="" title="" />
+              <h3>LINDSEY REMY</h3>
             </div>
+            {people.map(person => (
+              <Profile {...person} />
+            ))}
+          </div>
+          <div className="view_all_carousel">
+            <Link to="/">{texts.button}</Link>
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Carousel;
