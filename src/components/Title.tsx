@@ -4,7 +4,7 @@ import TextContext from "../core/TextContext";
 export default function Title(
   { hasBirds }: { hasBirds?: boolean } = { hasBirds: false }
 ) {
-  const texts: { [key: string]: string } = useContext(TextContext);
+  const texts: { [key: string]: any } = useContext(TextContext);
   return (
     <div className="title_container">
       <div className="title_front">WE ARE GETTING MARRIED</div>
@@ -14,7 +14,7 @@ export default function Title(
         </div>
       ) : null}
       <div className="title">
-        {texts.bride} <span>&amp;</span> {texts.groom}
+        {texts.global.bride} <span>&amp;</span> {texts.global.groom}
       </div>
       <div className="title_date">
         <span className="swirl_left">

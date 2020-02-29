@@ -1,5 +1,16 @@
 {
-  "bride": "Marta",
-  "groom": "Pere",
+  "global": {
+    "bride": "Marta",
+    "groom": "Pere"
+  },
+  "about": {
+    "moreAbout": "MORE ABOUT",
+    "theBride": "THE BRIDE",
+    "theGroom": "THE GROOM",
+    "brideText": "Love is friendship that has caught fire. It is quiet understanding, mutual confidence, <a href='#'>sharing and forgiving</a>. It is loyalty through good and bad times. It settles for less than perfection and <strong>makes allowances</strong> for human weaknesses <a href='#'>LOVE QUOTE</a>:",
+    "brideQuote": "Sometimes the heart sees what is invisible to the eye.",
+    "groomText": "I believe that imagination is stronger than knowledge. That myth is more potent than history. That dreams are more powerful than facts. That hope always triumphs over experience. That laughter is the only cure for grief. And I believe that love is stronger than death \"<a href='#p>LOVE QUOTE</a>\":",
+    "groomQuote": "Where there is love there is life."
+  },
   "introText": "Somos muy felices de anunciaros que ¡nos casamos! La celebración será el próximo sábado 12 de septiembre y hemos escogido celebrarlo en un lugar muy especial para nosotros, La Cerdanya."
 }

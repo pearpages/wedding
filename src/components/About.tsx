@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import TextContext from "../core/TextContext";
 
 function About() {
-  const texts: { [key: string]: string } = useContext(TextContext);
+  const texts: { [key: string]: any } = useContext(TextContext);
   return (
     <div className="about_content">
       <div className="about_topsign">&amp;</div>
       <div className="full_width_centered">
         <div className="left12_first">
-          <span className="names_titles">THE BRIDE</span>
-          <h2>{texts.bride}</h2>
+          <span className="names_titles">{texts.about.theBride}</span>
+          <h2>{texts.global.bride}</h2>
           <div className="about_pic_container">
             <span className="about_picframe"></span>
             <div className="about_social">
@@ -28,23 +28,14 @@ function About() {
             </div>
           </div>
           <a href="#" className="thumb_read_more">
-            MORE ABOUT {texts.bride.toUpperCase()}
+            {texts.about.moreAbout} {texts.global.bride.toUpperCase()}
           </a>
-          <p>
-            Love is friendship that has caught fire. It is quiet understanding,
-            mutual confidence, <a href="#">sharing and forgiving</a>. It is
-            loyalty through good and bad times. It settles for less than
-            perfection and
-            <strong>makes allowances</strong> for human weaknesses "
-            <a href="#">LOVE QUOTE</a>":
-          </p>
-          <span className="love_quote">
-            Sometimes the heart sees what is invisible to the eye.
-          </span>
+          <p dangerouslySetInnerHTML={{ __html: texts.about.brideText }} />
+          <span className="love_quote">{texts.about.brideQuote}</span>
         </div>
         <div className="left12_last">
-          <span className="names_titles">THE GROOM</span>
-          <h2>{texts.groom}</h2>
+          <span className="names_titles">{texts.about.theGroom}</span>
+          <h2>{texts.global.groom}</h2>
           <div className="about_pic_container">
             <span className="about_picframe"></span>
             <div className="about_social">
@@ -63,16 +54,10 @@ function About() {
             </div>
           </div>
           <a href="#" className="thumb_read_more">
-            MORE ABOUT {texts.groom.toUpperCase()}
+            {texts.about.moreAbout} {texts.global.groom.toUpperCase()}
           </a>
-          <p>
-            I believe that imagination is stronger than knowledge. That myth is
-            more potent than history. That dreams are more powerful than facts.
-            That hope always triumphs over experience. That laughter is the only
-            cure for grief. And I believe that love is stronger than death "
-            <a href="#">LOVE QUOTE</a>":
-          </p>
-          <span className="love_quote">Where there is love there is life.</span>
+          <p dangerouslySetInnerHTML={{ __html: texts.about.groomText }} />
+          <span className="love_quote">{texts.about.groomQuote}</span>
         </div>
 
         <div className="clear"></div>

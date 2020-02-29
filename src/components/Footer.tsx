@@ -3,7 +3,7 @@ import TextContext from "../core/TextContext";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
-  const texts: { [key: string]: string } = useContext(TextContext);
+  const texts: { [key: string]: any } = useContext(TextContext);
   return (
     <div className="footer">
       <div className="full_width_centered">
@@ -15,7 +15,7 @@ function Footer() {
           </span>
         </div>
         <div className="footer_names">
-          {texts.bride} &amp; {texts.groom}
+          {texts.global.bride} &amp; {texts.global.groom}
         </div>
         <div className="footer_socials">
           <ul>
