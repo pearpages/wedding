@@ -49,7 +49,7 @@ function Locations() {
   return (
     <div className="home_bottom">
       <div className="full_width_centered">
-        <div className="left13">
+        <div className="left12_first">
           <Location
             title={texts["santaMaria"].title}
             subtitle={texts["santaMaria"].subtitle}
@@ -59,7 +59,7 @@ function Locations() {
             icon={"images/icon_location.png"}
           />
         </div>
-        <div className="left13">
+        <div className="left12_last">
           <Location
             title={texts["santMarc"].title}
             subtitle={texts["santMarc"].subtitle}
@@ -69,23 +69,23 @@ function Locations() {
             icon={"images/icon_music.png"}
           />
         </div>
-        <div className="left13_last">
+        {/* <div className="left13_last">
           <div className="bottom_icon">
             <img src="images/icon_gifts.png" alt="" title="" />
           </div>
           <h2>GIFT REGISTRY</h2>
           <span className="subtitle">GIVEN FREELY AND OUT OF PURE LOVE</span>
-          {/* <p>
+          <p>
               Quis autem vel eum iure reprehenderit qui in ea voluptate velit
               <a href="https://google.es"> esse quam nihil</a> aspernatur aut
               odit aut fugit molestiae consequatur, vel illum{" "}
               <strong>qui dolorem</strong> eum fugiat quo voluptas nulla
               pariatur aspernatur.
-            </p> */}
+            </p>
           <a href="page.html" className="post_read_more">
             READ MORE
           </a>
-        </div>
+        </div> */}
 
         <div className="clear"></div>
       </div>
