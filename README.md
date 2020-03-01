@@ -3,6 +3,7 @@
 |Contents|
 |---|
 |[Services](##Services)|
+|[Translations](##Translations)|
 |[Tricks and Hacks](##Tricks&nbsp;and&nbsp;Hacks)|
 |[Create React App](##Create&nbsp;React&nbsp;App)|
 
@@ -28,6 +29,18 @@ Load jquery 1.11 from CDN asap. Check *index.html* file.
 
 ```
 https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js
+```
+
+---
+
+## Translations
+
+```ts
+import React, { useContext } from "react";
+
+import TextContext from "../core/TextContext";
+
+const texts: { [key: string]: any } = useContext(TextContext);
 ```
 
 ---
