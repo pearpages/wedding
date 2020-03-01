@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { useContext } from "react";
+import TextContext from "../core/TextContext";
 
 import Title from "../components/Title";
 import Slider from "../components/Slider";
@@ -7,19 +8,18 @@ import Countdown from "../components/Countdown";
 // import Carousel from "../components/Carousel";
 // import Blog from "../components/Blog";
 
-class Home extends Component {
-  render() {
-    return (
-      <>
-        <Title />
-        <Slider />
-        <Countdown />
-        {/* <About /> */}
-        {/* <Carousel /> */}
-        {/* <Blog /> */}
-      </>
-    );
-  }
+function Home() {
+  const texts: { [key: string]: any } = useContext(TextContext);
+  return (
+    <>
+      <Title hasBirds={false} texts={texts} />
+      <Slider />
+      <Countdown />
+      {/* <About /> */}
+      {/* <Carousel /> */}
+      {/* <Blog /> */}
+    </>
+  );
 }
 
 export default Home;

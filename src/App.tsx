@@ -17,16 +17,6 @@ class App extends Component {
   componentDidMount() {
     const done = setInterval(() => {
       try {
-        appendScriptInTheDOM("js/jquery.skippr.js", () => {
-          ($("#random") as any).skippr({
-            navType: "bubble",
-            transition: "fade",
-            autoPlay: true,
-            autoPlayDuration: 4000,
-            speed: 1000,
-            arrows: false
-          });
-        });
         appendScriptInTheDOM("js/owl.carousel.js", () => {
           ($("#weddingcarousel") as any).owlCarousel({
             items: 4,
