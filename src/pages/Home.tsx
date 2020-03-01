@@ -14,7 +14,7 @@ function Home() {
     <>
       <Title hasBirds={false} texts={texts} />
       <Slider />
-      <Countdown />
+      <Countdown texts={texts} />
       {/* <About /> */}
       {/* <Carousel /> */}
       {/* <Blog /> */}

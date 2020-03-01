@@ -10,11 +10,6 @@ $(window).load(function() {
   $titleunder.show().arctext({ radius: 180, dir: -1 });
   $bestman.show().arctext({ radius: 80 });
   $footernames.show().arctext({ radius: 120, dir: -1 });
-
-  $("#defaultCountdown").countdown({
-    until: new Date(2020, 9 - 1, 12, 12),
-    format: "y-o-d-h"
-  });
 });
 var main_menu = new main_menu.dd("main_menu");
 main_menu.init("main_menu", "menuhover");
