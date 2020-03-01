@@ -5,6 +5,7 @@ import { ROUTES } from "./routes";
 import translations from "./translations.json";
 import { TextProvider } from "./core/TextContext";
 import { appendScriptInTheDOM } from "./helpers";
+import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
 import Locations from "./components/Locations";
 import Footer from "./components/Footer";
@@ -40,6 +41,7 @@ class App extends Component {
     return (
       <TextProvider value={translations}>
         <Router>
+          <ScrollToTop />
           <Navigation />
           <Switch>
             <Route exact path={ROUTES.HOME}>
