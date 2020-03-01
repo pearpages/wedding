@@ -5,7 +5,7 @@ export default function BigHeader({
   children
 }: {
   title: string;
-  children: JSX.Element;
+  children?: JSX.Element;
 }) {
   return (
     <div className="page_header_photo general_header">

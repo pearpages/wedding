@@ -1,20 +1,20 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-import BigHeader from "../components/BigHeader";
+import Page from "../components/Page";
 import Content from "../components/Content";
 
 export default function NoMatch() {
   let location = useLocation();
+  const subContent = (
+    <p>
+      No match for <code>{location.pathname}</code>
+    </p>
+  );
 
   return (
-    <>
-      <BigHeader title="404">
-        <p>
-          No match for <code>{location.pathname}</code>
-        </p>
-      </BigHeader>
+    <Page title="404" subContent={subContent}>
       <Content />
-    </>
+    </Page>
   );
 }
