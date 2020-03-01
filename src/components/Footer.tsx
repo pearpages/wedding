@@ -60,18 +60,24 @@ function Footer() {
         <nav className="footer_menu">
           <ul>
             <li>
-              <NavLink to="/" activeClassName="selected">
+              <NavLink exact to="/" activeClassName="selected">
                 HOME
               </NavLink>
             </li>
             <li>
-              <NavLink to="/">THE WEDDING</NavLink>
+              <NavLink to="/asfdaf" activeClassName="selected">
+                THE WEDDING
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/">RSVP</NavLink>
+              <NavLink to="/afsdafa" activeClassName="selected">
+                RSVP
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/">GET IN TOUCH</NavLink>
+              <NavLink to="/afdfafs" activeClassName="selected">
+                GET IN TOUCH
+              </NavLink>
             </li>
             <li>
               <span
