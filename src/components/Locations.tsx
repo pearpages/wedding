@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import { ROUTES } from "../routes";
+import { ROUTES } from "../Routes";
 import TextContext from "../core/TextContext";
 import { renderHtml } from "../helpers";
 
