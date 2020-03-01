@@ -1,9 +1,9 @@
 import React from "react";
 
 const images = [
-  "http://d16jncjlowucvw.cloudfront.net/slider/slide1_e4ddpy.jpg",
-  "http://d16jncjlowucvw.cloudfront.net/slider/slide2_ma5nd6.jpg",
-  "http://d16jncjlowucvw.cloudfront.net/slider/slide3_ewhgf3.jpg"
+  "https://d16jncjlowucvw.cloudfront.net/slider/slide1_e4ddpy.jpg",
+  "https://d16jncjlowucvw.cloudfront.net/slider/slide2_ma5nd6.jpg",
+  "https://d16jncjlowucvw.cloudfront.net/slider/slide3_ewhgf3.jpg"
 ];
 
 function Slider() {
