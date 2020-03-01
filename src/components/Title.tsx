@@ -10,7 +10,7 @@ export default class Title extends Component<{
     // TODO: prevent component of reloadind the script eternally
     const done = setInterval(() => {
       try {
-        appendScriptInTheDOM("js/jquery.skippr.js", () => {
+        if (!!($("#random") as any).skippr) {
           ($("#random") as any).skippr({
             navType: "bubble",
             transition: "fade",
@@ -19,7 +19,18 @@ export default class Title extends Component<{
             speed: 1000,
             arrows: false
           });
-        });
+        } else {
+          appendScriptInTheDOM("js/jquery.skippr.js", () => {
+            ($("#random") as any).skippr({
+              navType: "bubble",
+              transition: "fade",
+              autoPlay: true,
+              autoPlayDuration: 4000,
+              speed: 1000,
+              arrows: false
+            });
+          });
+        }
         clearInterval(done);
         console.log("all title module dependencies loaded");
       } catch (e) {
