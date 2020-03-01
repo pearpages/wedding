@@ -1,9 +1,9 @@
 import React from "react";
 
 const images = [
-  "https://pearpages-wedding2.s3.eu-west-2.amazonaws.com/slider/slide1_e4ddpy.jpg",
-  "https://pearpages-wedding2.s3.eu-west-2.amazonaws.com/slider/slide2_ma5nd6.jpg",
-  "https://pearpages-wedding2.s3.eu-west-2.amazonaws.com/slider/slide3_ewhgf3.jpg"
+  "http://d16jncjlowucvw.cloudfront.net/slider/slide1_e4ddpy.jpg",
+  "http://d16jncjlowucvw.cloudfront.net/slider/slide2_ma5nd6.jpg",
+  "http://d16jncjlowucvw.cloudfront.net/slider/slide3_ewhgf3.jpg"
 ];
 
 function Slider() {
