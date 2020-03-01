@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { ROUTES } from "./routes";
 
 import translations from "./translations.json";
 import { TextProvider } from "./core/TextContext";
@@ -9,6 +10,8 @@ import Locations from "./components/Locations";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
+import MasSantMarc from "./pages/MasSantMarc";
+import SantaMaria from "./pages/SantaMaria";
 
 class App extends Component {
   componentDidMount() {
@@ -49,14 +52,19 @@ class App extends Component {
         <Router>
           <Navigation />
           <Switch>
-            <Route exact path="/">
+            <Route exact path={ROUTES.HOME}>
               <Home />
+            </Route>
+            <Route path={ROUTES.MAS_SANT_ARC}>
+              <MasSantMarc />
+            </Route>
+            <Route path={ROUTES.SANTA_MARIA_DE_TALLO}>
+              <SantaMaria />
             </Route>
             <Route path="*">
               <NoMatch />
             </Route>
           </Switch>
-
           <Locations />
           <Footer />
         </Router>

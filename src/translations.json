@@ -29,5 +29,11 @@
     "title": "Countdown to Wedding Ceremony",
     "message": "Nos encantaría que pudieseis venir a celebrarlo con nosotros y os agradeceríamos que nos confirmaseis vuestra asistencia lo antes posible. ",
     "button": "RSVP"
+  },
+  "santaMaria": {
+    "description": "L'església de Santa Maria de Talló, es troba a la pedania de Talló, en el terme municipal de Bellver de Cerdanya, a la ribera esquerra del riu Segre dintre de la comarca de la Baixa Cerdanya. Coneguda antigament amb el nom de Santa Maria Cabanaria (es creu per les nombroses cabanyes de pastors que havia pels voltants). A partir de l'any 1842 és Santuari i va ser declarat el 1993 bé cultural d'interès nacional."
+  },
+  "santMarc": {
+    "description": "The Sant Marc country house represents the dream of opening the landscape and culture of La Cerdanya to those that have a desire to explore it in depth. From the classical construction of the country house, to the delicateness of the garden, the traditional activities and the local food, everything is planned to offer a complete experience to the independent travelers, the adventurous couples or the lively families that desire to go through a truly authentic encounter."
   }
 }
