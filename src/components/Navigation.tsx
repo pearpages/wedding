@@ -20,30 +20,30 @@ class Navigation extends Component {
               </NavLink>
             </li>
             <li>
-              <a href="page.html">THE WEDDING</a>
+              <NavLink to="/">THE WEDDING</NavLink>
               <ul>
                 <li>
-                  <a href="page.html">LOVELY DROP DOWN</a>
+                  <NavLink to="/">LOVELY DROP DOWN</NavLink>
                 </li>
                 <li>
-                  <a href="page.html">LOVELY DROP DOWN</a>
+                  <NavLink to="/">LOVELY DROP DOWN</NavLink>
                 </li>
                 <li>
-                  <a href="page.html">LOVELY DROP DOWN</a>
+                  <NavLink to="/">LOVELY DROP DOWN</NavLink>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="blog.html">BLOG</a>
+              <NavLink to="/">BLOG</NavLink>
             </li>
             <li>
-              <a href="photos.html">PHOTOS</a>
+              <NavLink to="/">PHOTOS</NavLink>
             </li>
             <li>
-              <a href="rsvp.html">RSVP</a>
+              <NavLink to="/">RSVP</NavLink>
             </li>
             <li>
-              <a href="contact.html">GET IN TOUCH</a>
+              <NavLink to="/">GET IN TOUCH</NavLink>
             </li>
           </ul>
         </nav>
