@@ -4,6 +4,10 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { appendScriptInTheDOM } from "./helpers";
 
+import "./style.css";
+import "./colors/green.css";
+import "./css/carousel.css";
+
 appendScriptInTheDOM("js/jquery-1.11.1.min.js");
 
 ReactDOM.render(<App />, document.getElementById("main_container"));
