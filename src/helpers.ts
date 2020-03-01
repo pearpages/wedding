@@ -10,3 +10,7 @@ export function appendScriptInTheDOM(
 
   document.body.appendChild(script);
 }
+
+export function renderHtml(html: string) {
+  return { dangerouslySetInnerHTML: { __html: html } };
+}
