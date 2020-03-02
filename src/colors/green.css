@@ -110,3 +110,7 @@ ul#main_menu li a:hover,
   margin: 0px auto 20px;
   text-align: center;
 }
+.image {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+  border: 10px solid white;
+}

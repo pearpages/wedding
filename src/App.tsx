@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navigation from "./components/Navigation";
 import Locations from "./components/Locations";
 import Footer from "./components/Footer";
+import Recommendations from "./components/Recommendations";
 
 class App extends Component {
   componentDidMount() {
@@ -40,6 +41,7 @@ class App extends Component {
           <ScrollToTop />
           <Navigation />
           <Routes />
+          <Recommendations />
           <Locations />
           <Footer />
         </Router>

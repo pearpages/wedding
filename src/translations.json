@@ -31,6 +31,9 @@
     "message": "Nos encantaría que pudieseis venir a celebrarlo con nosotros y os agradeceríamos que nos confirmaseis vuestra asistencia lo antes posible. ",
     "button": "RSVP"
   },
+  "recommendations": {
+    "mainText": "Aprovechando que en algunas localidades el viernes es festivo, os recomendaríamos que aprovechaseis para alargar el fin de semana y disfrutar desde el viernes de todo lo que ofrece la Cerdaña. A continuación os recomendamos varios sitios y planes:"
+  },
   "santaMaria": {
     "title": "WEDDING LOCATION",
     "subtitle": "LA CERDANYA - SANTA MARIA DE TALLÓ",
