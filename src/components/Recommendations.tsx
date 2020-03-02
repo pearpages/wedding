@@ -11,31 +11,31 @@ import { ROUTES } from "Routes";
 export function Recommendations() {
   const texts: Texts = useContext(TextContext);
   return (
-    <div className="page_content">
+    <div id="recommendations" className="page_content">
       <div className="full_width_centered">
         <div className="left_full">
           <p>{texts.recommendations.mainText}</p>
         </div>
         <div className="left13_first">
-          <h3>{texts.global.hotels}</h3>
+          <h3>{texts.hotels.title}</h3>
           <div className="image">
-            <img src={image1} alt={texts.global.hotels} />
+            <img src={image1} alt={texts.hotels.title} />
           </div>
           <ReadMore route={ROUTES.ALLOTJAMENT} />
         </div>
 
         <div className="left13">
-          <h3>{texts.global.restaurants}</h3>
+          <h3>{texts.restaurants.title}</h3>
           <div className="image">
-            <img src={image2} alt={texts.global.restaurants} />
+            <img src={image2} alt={texts.restaurants.title} />
           </div>
           <ReadMore route={ROUTES.RESTAURANTS} />
         </div>
 
         <div className="left13_last">
-          <h3>{texts.global.plans}</h3>
+          <h3>{texts.plans.title}</h3>
           <div className="image">
-            <img src={image3} alt={texts.global.plans} />
+            <img src={image3} alt={texts.plans.title} />
           </div>
           <ReadMore route={ROUTES.PLANS} />
         </div>

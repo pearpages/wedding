@@ -7,7 +7,7 @@ import { Page, Content } from "components";
 export function Restaurants() {
   const texts: Texts = useContext(TextContext);
   return (
-    <Page title={texts.global.restaurants}>
+    <Page title={texts.restaurants.title}>
       <Content></Content>
     </Page>
   );

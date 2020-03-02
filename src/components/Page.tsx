@@ -13,7 +13,7 @@ export function Page({
 }) {
   return (
     <>
-      <BigHeader title={title}>{subContent}</BigHeader>
+      <BigHeader title={title.toUpperCase()}>{subContent}</BigHeader>
       {children}
     </>
   );

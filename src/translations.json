@@ -3,10 +3,19 @@
     "bride": "Marta",
     "groom": "Pere",
     "date": "12.09.2020",
-    "readMore": "LEER MÁS",
-    "hotels": "Alojamiento",
-    "plans": "Planes",
-    "restaurants": "Restaurantes"
+    "readMore": "LEER MÁS"
+  },
+  "navigation": {
+    "home": "HOME",
+    "wedding": "CEREMONIA",
+    "reception": "RECEPCION",
+    "hotels": "ALOJAMIENTO",
+    "presents": "REGALO",
+    "rsvp": "RSVP",
+    "contact": "CONTACTO",
+    "recommendations": "RECOMENDACIONES",
+    "plans": "PLANES",
+    "restaurants": "RESTAURANTES"
   },
   "title": {
     "title": "WE ARE GETTING MARRIED",
@@ -52,5 +61,8 @@
     "externalLink": "https://santmarc.es/ca/",
     "location": "<strong>Mas Sant Marc</strong><br />Cami de St. Marc s/n<br />Carretera de Puigcerdà a Queixans (por Les Pereres)<br />17520 – Puigcerdà – La Cerdanya (Girona)</p>",
     "description": "The Sant Marc country house represents the dream of opening the landscape and culture of La Cerdanya to those that have a desire to explore it in depth. From the classical construction of the country house, to the delicateness of the garden, the traditional activities and the local food, everything is planned to offer a complete experience to the independent travelers, the adventurous couples or the lively families that desire to go through a truly authentic encounter."
-  }
+  },
+  "hotels": { "title": "Alojamiento" },
+  "plans": { "title": "Planes" },
+  "restaurants": { "title": "Restaurantes" }
 }

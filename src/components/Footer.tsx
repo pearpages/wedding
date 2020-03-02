@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 import { TextContext } from "core";
-import { Texts } from "types";
+import { Texts, Route } from "types";
+import { ROUTE_MAPPING } from "Routes";
 
 export function Footer() {
   const texts: Texts = useContext(TextContext);
@@ -60,26 +61,13 @@ export function Footer() {
         </div>
         <nav className="footer_menu">
           <ul>
-            <li>
-              <NavLink exact to="/" activeClassName="selected">
-                HOME
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/asfdaf" activeClassName="selected">
-                THE WEDDING
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/afsdafa" activeClassName="selected">
-                RSVP
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/afdfafs" activeClassName="selected">
-                GET IN TOUCH
-              </NavLink>
-            </li>
+            {ROUTE_MAPPING.map((route: Route) => (
+              <li key={route.label}>
+                <NavLink exact to={route.path} activeClassName="selected">
+                  {texts.navigation[route.label]}
+                </NavLink>
+              </li>
+            ))}
             <li>
               <span
                 onClick={() =>

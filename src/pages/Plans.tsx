@@ -7,7 +7,7 @@ import { Page, Content } from "components";
 export function Plans() {
   const texts: Texts = useContext(TextContext);
   return (
-    <Page title={texts.global.plans}>
+    <Page title={texts.plans.title}>
       <Content></Content>
     </Page>
   );
