@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import image1 from "./images/image1.jpeg";
 import image2 from "./images/image2.jpeg";
 import image3 from "./images/image3.jpeg";
@@ -19,7 +18,7 @@ export default function Recommendations() {
         <div className="left13_first">
           <h3>Alojamiento</h3>
           <div className="image">
-            <img src={image1} />
+            <img src={image1} alt="alojamiento" />
           </div>
           <ReadMore />
         </div>
@@ -27,7 +26,7 @@ export default function Recommendations() {
         <div className="left13">
           <h3>Restaurantes</h3>
           <div className="image">
-            <img src={image2} />
+            <img src={image2} alt="restaurantes" />
           </div>
           <ReadMore />
         </div>
@@ -35,7 +34,7 @@ export default function Recommendations() {
         <div className="left13_last">
           <h3>Planes</h3>
           <div className="image">
-            <img src={image3} />
+            <img src={image3} alt="planes" />
           </div>
           <ReadMore />
         </div>

@@ -2,10 +2,9 @@ import React, { useContext } from "react";
 import TextContext from "../core/TextContext";
 
 import { Texts } from "types";
-import Title from "../components/Title";
+import { Title, BrideNGroom } from "components";
 import Slider from "../components/Slider";
 import Countdown from "../components/Countdown";
-import About from "../components/About";
 import Carousel from "../components/Carousel";
 import Blog from "../components/Blog";
 
@@ -16,7 +15,7 @@ function Home() {
       <Title hasBirds={false} texts={texts} />
       <Slider />
       <Countdown texts={texts} />
-      <About />
+      <BrideNGroom />
       <Carousel />
       <Blog />
     </>

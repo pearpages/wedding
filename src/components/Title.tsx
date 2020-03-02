@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { appendScriptInTheDOM } from "helpers";
 import { Texts } from "types";
 
-export default class Title extends Component<{
+export class Title extends Component<{
   hasBirds: boolean;
   texts: Texts;
 }> {

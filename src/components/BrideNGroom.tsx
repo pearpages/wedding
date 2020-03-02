@@ -88,7 +88,7 @@ function Groom({ texts }: { texts: Texts }) {
   );
 }
 
-function About() {
+export function BrideNGroom() {
   const texts: Texts = useContext(TextContext);
   return (
     <div className="about_content">
@@ -106,5 +106,3 @@ function About() {
     </div>
   );
 }
-
-export default About;

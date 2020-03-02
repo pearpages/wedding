@@ -1,6 +1,6 @@
 import React from "react";
 
-import BigHeader from "../components/BigHeader";
+import { BigHeader } from "components/BigHeader";
 
 export default function Page({
   title,
