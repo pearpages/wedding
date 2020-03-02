@@ -17,25 +17,25 @@ export function Recommendations() {
           <p>{texts.recommendations.mainText}</p>
         </div>
         <div className="left13_first">
-          <h3>Alojamiento</h3>
+          <h3>{texts.global.hotels}</h3>
           <div className="image">
-            <img src={image1} alt="alojamiento" />
+            <img src={image1} alt={texts.global.hotels} />
           </div>
           <ReadMore route={ROUTES.ALLOTJAMENT} />
         </div>
 
         <div className="left13">
-          <h3>Restaurantes</h3>
+          <h3>{texts.global.restaurants}</h3>
           <div className="image">
-            <img src={image2} alt="restaurantes" />
+            <img src={image2} alt={texts.global.restaurants} />
           </div>
           <ReadMore route={ROUTES.RESTAURANTS} />
         </div>
 
         <div className="left13_last">
-          <h3>Planes</h3>
+          <h3>{texts.global.plans}</h3>
           <div className="image">
-            <img src={image3} alt="planes" />
+            <img src={image3} alt={texts.global.plans} />
           </div>
           <ReadMore route={ROUTES.PLANS} />
         </div>

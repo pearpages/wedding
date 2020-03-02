@@ -1,5 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { Texts } from "types";
+import { TextContext } from "core";
+import { Page, Content } from "components";
 
 export function Allotjament() {
-  return <div>Allotjament</div>;
+  const texts: Texts = useContext(TextContext);
+  return (
+    <Page title={texts.global.hotels}>
+      <Content></Content>
+    </Page>
+  );
 }
