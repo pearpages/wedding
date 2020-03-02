@@ -5,13 +5,7 @@ import translations from "./translations.json";
 import Routes from "Routes";
 import { TextProvider } from "core";
 import { appendScriptInTheDOM } from "helpers";
-import {
-  Footer,
-  Locations,
-  Navigation,
-  ScrollToTop,
-  Recommendations
-} from "components";
+import { Footer, Locations, Navigation, ScrollToTop } from "components";
 
 class App extends Component {
   componentDidMount() {
@@ -43,7 +37,6 @@ class App extends Component {
           <ScrollToTop />
           <Navigation />
           <Routes />
-          <Recommendations />
           <Locations />
           <Footer />
         </Router>

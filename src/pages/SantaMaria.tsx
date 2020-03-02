@@ -4,7 +4,7 @@ import { Texts } from "types";
 import { TextContext } from "core";
 import { Page, Content, Full } from "components";
 
-export default function SantaMaria() {
+export function SantaMaria() {
   const texts: Texts = useContext(TextContext);
   return (
     <Page title={texts.santaMaria.title}>

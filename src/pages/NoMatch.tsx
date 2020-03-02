@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 import { Content, Page } from "components";
 
-export default function NoMatch() {
+export function NoMatch() {
   let location = useLocation();
   const subContent = (
     <p>

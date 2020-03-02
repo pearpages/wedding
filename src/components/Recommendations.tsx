@@ -6,6 +6,7 @@ import image3 from "./images/image3.jpeg";
 import { TextContext } from "core";
 import { Texts } from "types";
 import { ReadMore } from "components";
+import { ROUTES } from "Routes";
 
 export function Recommendations() {
   const texts: Texts = useContext(TextContext);
@@ -20,7 +21,7 @@ export function Recommendations() {
           <div className="image">
             <img src={image1} alt="alojamiento" />
           </div>
-          <ReadMore />
+          <ReadMore route={ROUTES.ALLOTJAMENT} />
         </div>
 
         <div className="left13">
@@ -28,7 +29,7 @@ export function Recommendations() {
           <div className="image">
             <img src={image2} alt="restaurantes" />
           </div>
-          <ReadMore />
+          <ReadMore route={ROUTES.RESTAURANTS} />
         </div>
 
         <div className="left13_last">
@@ -36,7 +37,7 @@ export function Recommendations() {
           <div className="image">
             <img src={image3} alt="planes" />
           </div>
-          <ReadMore />
+          <ReadMore route={ROUTES.PLANS} />
         </div>
         <div className="clear"></div>
       </div>

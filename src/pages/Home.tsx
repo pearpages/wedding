@@ -4,25 +4,25 @@ import { TextContext } from "core";
 import { Texts } from "types";
 import {
   Title,
-  BrideNGroom,
-  Blog,
-  Carousel,
+  // BrideNGroom,
+  // Blog,
+  // Carousel,
   Countdown,
-  Slider
+  Slider,
+  Recommendations
 } from "components";
 
-function Home() {
+export function Home() {
   const texts: Texts = useContext(TextContext);
   return (
     <>
       <Title hasBirds={false} texts={texts} />
       <Slider />
       <Countdown texts={texts} />
-      <BrideNGroom />
+      <Recommendations />
+      {/* <BrideNGroom />
       <Carousel />
-      <Blog />
+      <Blog /> */}
     </>
   );
 }
-
-export default Home;
