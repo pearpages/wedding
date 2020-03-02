@@ -10,7 +10,7 @@ export default function Recommendations() {
   const texts: { [key: string]: any } = useContext(TextContext);
   return (
     <div className="page_content">
-      <div className="full_width_centered">
+      <div className="full_width_centered" style={{ textAlign: "center" }}>
         <div className="left_full">
           <p>{texts.recommendations.mainText}</p>
         </div>
@@ -21,7 +21,7 @@ export default function Recommendations() {
           </div>
 
           <Link className="post_read_more" to="/">
-            READ MORE
+            {texts.global.readMore}
           </Link>
         </div>
 
@@ -32,7 +32,7 @@ export default function Recommendations() {
           </div>
 
           <Link className="post_read_more" to="/">
-            READ MORE
+            {texts.global.readMore}
           </Link>
         </div>
 
@@ -43,7 +43,7 @@ export default function Recommendations() {
           </div>
 
           <Link className="post_read_more" to="/">
-            READ MORE
+            {texts.global.readMore}
           </Link>
         </div>
         <div className="clear"></div>
