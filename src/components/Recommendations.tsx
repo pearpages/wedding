@@ -21,7 +21,7 @@ export function Recommendations() {
           <div className="image">
             <img src={image1} alt={texts.hotels.title} />
           </div>
-          <ReadMore route={ROUTES.ALLOTJAMENT} />
+          <ReadMore route={ROUTES.HOTELS} />
         </div>
 
         <div className="left13">
