@@ -2,9 +2,10 @@ import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 import TextContext from "../core/TextContext";
+import { Texts } from "types";
 
 function Footer() {
-  const texts: { [key: string]: any } = useContext(TextContext);
+  const texts: Texts = useContext(TextContext);
   return (
     <div className="footer">
       <div className="full_width_centered">

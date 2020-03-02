@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class Countdown extends Component<{ texts: { [key: string]: any } }> {
+import { Texts } from "types";
+
+class Countdown extends Component<{ texts: Texts }> {
   componentDidMount() {
     const done = setInterval(() => {
       try {

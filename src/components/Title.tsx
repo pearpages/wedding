@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 
-import { appendScriptInTheDOM } from "../helpers";
+import { appendScriptInTheDOM } from "helpers";
+import { Texts } from "types";
 
 export default class Title extends Component<{
   hasBirds: boolean;
-  texts: { [key: string]: any };
+  texts: Texts;
 }> {
   componentDidMount() {
     // TODO: prevent component of reloadind the script eternally

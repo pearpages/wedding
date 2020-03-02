@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import TextContext from "../core/TextContext";
+import TextContext from "core/TextContext";
+import { Texts } from "types";
 
 function Persona({
   subtitle,
@@ -47,7 +48,7 @@ function Persona({
   );
 }
 
-function Bride({ texts }: { texts: { [key: string]: any } }) {
+function Bride({ texts }: { texts: Texts }) {
   const subtitle = texts.about.theBride;
   const title = texts.global.bride;
   const readMore = `${
@@ -67,7 +68,7 @@ function Bride({ texts }: { texts: { [key: string]: any } }) {
   );
 }
 
-function Groom({ texts }: { texts: { [key: string]: any } }) {
+function Groom({ texts }: { texts: Texts }) {
   const subtitle = texts.about.theGroom;
   const title = texts.global.groom;
   const readMore = `${
@@ -88,7 +89,7 @@ function Groom({ texts }: { texts: { [key: string]: any } }) {
 }
 
 function About() {
-  const texts: { [key: string]: any } = useContext(TextContext);
+  const texts: Texts = useContext(TextContext);
   return (
     <div className="about_content">
       <div className="about_topsign">&amp;</div>

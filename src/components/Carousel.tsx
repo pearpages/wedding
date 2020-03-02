@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import TextContext from "../core/TextContext";
+import { Texts } from "types";
 
 const people = [
   {
@@ -42,8 +43,8 @@ function Profile({
 }
 
 function Carousel() {
-  const translations: { [key: string]: any } = useContext(TextContext);
-  const texts = translations.carousel;
+  const translations: Texts = useContext(TextContext);
+  const texts: Texts = translations.carousel;
   return (
     <div className="carousel_container">
       <div className="carousel_container_image">
