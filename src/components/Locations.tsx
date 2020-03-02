@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 
 import { Texts } from "types";
 import { ROUTES } from "Routes";
-import TextContext from "core/TextContext";
+import { TextContext } from "core";
 import { renderHtml } from "helpers";
-import ReadMore from "components/ReadMore";
+import { ReadMore } from "components";
 
 function Location({
   title,
@@ -41,7 +41,7 @@ function Location({
   );
 }
 
-function Locations() {
+export function Locations() {
   const texts: Texts = useContext(TextContext);
   return (
     <div className="home_bottom">
@@ -89,5 +89,3 @@ function Locations() {
     </div>
   );
 }
-
-export default Locations;

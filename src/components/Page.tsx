@@ -2,7 +2,7 @@ import React from "react";
 
 import { BigHeader } from "components/BigHeader";
 
-export default function Page({
+export function Page({
   title,
   children,
   subContent

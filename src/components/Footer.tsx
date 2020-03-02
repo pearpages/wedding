@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 
-import TextContext from "../core/TextContext";
+import { TextContext } from "core";
 import { Texts } from "types";
 
-function Footer() {
+export function Footer() {
   const texts: Texts = useContext(TextContext);
   return (
     <div className="footer">
@@ -98,5 +98,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

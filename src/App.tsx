@@ -2,14 +2,16 @@ import React, { Component } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import translations from "./translations.json";
-import Routes from "./Routes";
-import { TextProvider } from "./core/TextContext";
-import { appendScriptInTheDOM } from "./helpers";
-import ScrollToTop from "./components/ScrollToTop";
-import Navigation from "./components/Navigation";
-import Locations from "./components/Locations";
-import Footer from "./components/Footer";
-import Recommendations from "./components/Recommendations";
+import Routes from "Routes";
+import { TextProvider } from "core";
+import { appendScriptInTheDOM } from "helpers";
+import {
+  Footer,
+  Locations,
+  Navigation,
+  ScrollToTop,
+  Recommendations
+} from "components";
 
 class App extends Component {
   componentDidMount() {

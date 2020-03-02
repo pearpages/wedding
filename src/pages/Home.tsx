@@ -1,12 +1,15 @@
 import React, { useContext } from "react";
-import TextContext from "../core/TextContext";
 
+import { TextContext } from "core";
 import { Texts } from "types";
-import { Title, BrideNGroom } from "components";
-import Slider from "../components/Slider";
-import Countdown from "../components/Countdown";
-import Carousel from "../components/Carousel";
-import Blog from "../components/Blog";
+import {
+  Title,
+  BrideNGroom,
+  Blog,
+  Carousel,
+  Countdown,
+  Slider
+} from "components";
 
 function Home() {
   const texts: Texts = useContext(TextContext);

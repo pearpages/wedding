@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Full({
+export function Full({
   title,
   children
 }: {

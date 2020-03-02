@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-class Navigation extends Component {
+export class Navigation extends Component {
   render() {
     return (
       <>
@@ -51,5 +51,3 @@ class Navigation extends Component {
     );
   }
 }
-
-export default Navigation;

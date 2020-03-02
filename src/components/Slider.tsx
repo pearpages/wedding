@@ -6,7 +6,7 @@ const images = [
   "https://d16jncjlowucvw.cloudfront.net/slider/slide3_ewhgf3.jpg"
 ];
 
-function Slider() {
+export function Slider() {
   return (
     <div className="slider_container">
       <div className="slider_trans_black"></div>
@@ -23,5 +23,3 @@ function Slider() {
     </div>
   );
 }
-
-export default Slider;

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import TextContext from "core/TextContext";
+import { TextContext } from "core";
 import { Texts } from "types";
 
 function Persona({

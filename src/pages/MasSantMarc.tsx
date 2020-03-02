@@ -1,10 +1,8 @@
 import React, { useContext } from "react";
 
 import { Texts } from "types";
-import TextContext from "../core/TextContext";
-import Content from "../components/Content";
-import Full from "../components/Full";
-import Page from "../components/Page";
+import { TextContext } from "core";
+import { Content, Full, Page } from "components";
 
 export default function MasSantMarc() {
   const texts: Texts = useContext(TextContext);

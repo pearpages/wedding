@@ -3,11 +3,11 @@ import image1 from "./images/image1.jpeg";
 import image2 from "./images/image2.jpeg";
 import image3 from "./images/image3.jpeg";
 
-import TextContext from "core/TextContext";
+import { TextContext } from "core";
 import { Texts } from "types";
-import ReadMore from "components/ReadMore";
+import { ReadMore } from "components";
 
-export default function Recommendations() {
+export function Recommendations() {
   const texts: Texts = useContext(TextContext);
   return (
     <div className="page_content">

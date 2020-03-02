@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import TextContext from "../core/TextContext";
+import { TextContext } from "core";
 import { Texts } from "types";
 
 const people = [
@@ -42,7 +42,7 @@ function Profile({
   );
 }
 
-function Carousel() {
+export function Carousel() {
   const translations: Texts = useContext(TextContext);
   const texts: Texts = translations.carousel;
   return (
@@ -80,5 +80,3 @@ function Carousel() {
     </div>
   );
 }
-
-export default Carousel;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Content({ children }: { children?: JSX.Element }) {
+export function Content({ children }: { children?: JSX.Element }) {
   return (
     <div className="page_content">
       <div className="full_width_centered">

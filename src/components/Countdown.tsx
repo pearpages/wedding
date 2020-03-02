@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import { Texts } from "types";
-
-class Countdown extends Component<{ texts: Texts }> {
+export class Countdown extends Component<{ texts: Texts }> {
   componentDidMount() {
     const done = setInterval(() => {
       try {
@@ -36,5 +35,3 @@ class Countdown extends Component<{ texts: Texts }> {
     );
   }
 }
-
-export default Countdown;
