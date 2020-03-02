@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { appendScriptInTheDOM } from "helpers";
 import { Texts } from "types";
 
 export function Countdown({ texts }: { texts: Texts }) {
   const done = setInterval(() => {
     try {
+      appendScriptInTheDOM("/js/jquery.countdown.js");
       if (($("#defaultCountdown") as any).countdown) {
         ($("#defaultCountdown") as any).countdown({
           until: new Date(2020, 9 - 1, 12, 12),

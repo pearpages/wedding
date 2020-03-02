@@ -45,6 +45,7 @@ function Profile({
 export function Carousel({ texts }: { texts: Texts }) {
   const done = setInterval(() => {
     try {
+      appendScriptInTheDOM("/js/jquery.arctext.js");
       appendScriptInTheDOM("/js/owl.carousel.js");
       ($("#weddingcarousel") as any).owlCarousel({
         items: 4,

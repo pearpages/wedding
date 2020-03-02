@@ -4,6 +4,7 @@ import { appendScriptInTheDOM } from "helpers";
 import { Texts } from "types";
 
 const effect = () => {
+  appendScriptInTheDOM("/js/jquery.arctext.js");
   const $titlefront = $(".title_front").show();
   const $titleunder = $(".title_under").show();
 

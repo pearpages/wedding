@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 
+import { appendScriptInTheDOM } from "helpers";
 import { TextContext } from "core";
 import { Texts, Route } from "types";
 import { ROUTE_MAPPING } from "Routes";
@@ -9,6 +10,7 @@ export function Footer() {
   const texts: Texts = useContext(TextContext);
   const done = setInterval(() => {
     try {
+      appendScriptInTheDOM("/js/jquery.arctext.js");
       const $footernames = $(".footer_names");
       ($footernames.show() as any).arctext({ radius: 120, dir: -1 });
       clearInterval(done);
