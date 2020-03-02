@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 
-import { ROUTES } from "../Routes";
-import TextContext from "../core/TextContext";
-import { renderHtml } from "../helpers";
+import { Texts } from "types";
+import { ROUTES } from "Routes";
+import TextContext from "core/TextContext";
+import { renderHtml } from "helpers";
+import ReadMore from "components/ReadMore";
 
 function Location({
   title,
@@ -20,8 +21,6 @@ function Location({
   route: string;
   icon: string;
 }) {
-  const texts: { [key: string]: any } = useContext(TextContext);
-  const global = texts.global;
   return (
     <>
       <div className="bottom_icon">
@@ -37,15 +36,13 @@ function Location({
         width="280"
         height="300"
       ></iframe>
-      <Link className="post_read_more" to={route}>
-        {global.readMore}
-      </Link>
+      <ReadMore route={route} />
     </>
   );
 }
 
 function Locations() {
-  const texts: { [key: string]: any } = useContext(TextContext);
+  const texts: Texts = useContext(TextContext);
   return (
     <div className="home_bottom">
       <div className="full_width_centered">
