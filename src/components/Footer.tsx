@@ -63,7 +63,11 @@ export function Footer() {
           <ul>
             {ROUTE_MAPPING.map((route: Route) => (
               <li key={route.label}>
-                <NavLink exact to={route.path} activeClassName="selected">
+                <NavLink
+                  exact
+                  to={route.path}
+                  activeClassName={route.isAnchor ? "" : "selected"}
+                >
                   {texts.navigation[route.label]}
                 </NavLink>
               </li>

@@ -28,6 +28,7 @@ export const ROUTE_MAPPING: AppRoute[] = [
   { path: ROUTES.ALLOTJAMENT, label: "hotels" },
   {
     path: ROUTES.RECOMMENDATIONS,
+    isAnchor: true,
     label: "recommendations",
     children: [
       { path: ROUTES.RESTAURANTS, label: "restaurants" },

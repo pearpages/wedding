@@ -21,9 +21,28 @@ export function Navigation() {
           {ROUTE_MAPPING.map((route: Route) => {
             return (
               <li key={route.label}>
-                <NavLink exact activeClassName="selected" to={route.path}>
+                <NavLink
+                  exact
+                  activeClassName={route.isAnchor ? "none" : "selected"}
+                  to={route.path}
+                >
                   {texts.navigation[route.label]}
                 </NavLink>
+                {route.children ? (
+                  <ul>
+                    {route.children.map((route: Route) => (
+                      <li key={route.label}>
+                        <NavLink
+                          exact
+                          activeClassName="selected"
+                          to={route.path}
+                        >
+                          {texts.navigation[route.label]}
+                        </NavLink>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
               </li>
             );
           })}
