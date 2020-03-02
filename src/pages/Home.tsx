@@ -20,9 +20,9 @@ export function Home() {
       <Slider />
       <Countdown texts={texts} />
       <Recommendations />
-      {/* <BrideNGroom />
-      <Carousel />
-      <Blog /> */}
+      {/* <BrideNGroom /> */}
+      {/* <Carousel texts={texts} /> */}
+      {/* <Blog /> */}
     </>
   );
 }

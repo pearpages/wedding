@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { appendScriptInTheDOM } from "helpers";
 
-import { TextContext } from "core";
 import { Texts } from "types";
 
 const people = [
@@ -42,19 +42,34 @@ function Profile({
   );
 }
 
-export function Carousel() {
-  const translations: Texts = useContext(TextContext);
-  const texts: Texts = translations.carousel;
+export function Carousel({ texts }: { texts: Texts }) {
+  const done = setInterval(() => {
+    try {
+      appendScriptInTheDOM("/js/owl.carousel.js");
+      ($("#weddingcarousel") as any).owlCarousel({
+        items: 4,
+        itemsScaleUp: true,
+        navigationText: ["prev", "next"]
+      });
+
+      const $bestman = $(".bestman span");
+      ($bestman.show() as any).arctext({ radius: 80 });
+      clearInterval(done);
+    } catch (_) {}
+  }, 100);
+
   return (
     <div className="carousel_container">
       <div className="carousel_container_image">
         <div className="full_width_carousel">
-          <h2>{texts.title}</h2>
-          <span className="carousel_titles">{texts.subtitle}</span>
+          <h2>{texts.carousel.title}</h2>
+          <span className="carousel_titles">{texts.carousel.subtitle}</span>
           <div id="weddingcarousel" className="owl-carousel">
             <div className="left14">
               <div className="bestman">
-                <span>{texts.bestMan}</span>
+                <span style={{ display: "none" }}>
+                  {texts.carousel.bestMan}
+                </span>
                 <img src="images/bestman.png" alt="" title="" />
               </div>
               <img src="images/image_14.jpg" alt="" title="" />
@@ -62,7 +77,9 @@ export function Carousel() {
             </div>
             <div className="left14">
               <div className="bestman">
-                <span>{texts.maidOfHonor}</span>
+                <span style={{ display: "none" }}>
+                  {texts.carousel.maidOfHonor}
+                </span>
                 <img src="images/maidofhonor.png" alt="" title="" />
               </div>
               <img src="images/image_14_3.jpg" alt="" title="" />
@@ -73,7 +90,7 @@ export function Carousel() {
             ))}
           </div>
           <div className="view_all_carousel">
-            <Link to="/">{texts.button}</Link>
+            <Link to="/">{texts.carousel.button}</Link>
           </div>
         </div>
       </div>

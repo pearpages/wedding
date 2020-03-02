@@ -7,54 +7,61 @@ import { ROUTE_MAPPING } from "Routes";
 
 export function Footer() {
   const texts: Texts = useContext(TextContext);
+  const done = setInterval(() => {
+    try {
+      const $footernames = $(".footer_names");
+      ($footernames.show() as any).arctext({ radius: 120, dir: -1 });
+      clearInterval(done);
+    } catch (_) {}
+  });
   return (
     <div className="footer">
       <div className="full_width_centered">
         <div className="footer_sign">
           <span className="swirl_left_transparent">
             <span className="swirl_right_transparent">
-              <img src="images/birds_icon.png" alt="" title="" />{" "}
+              <img src="/images/birds_icon.png" alt="" title="" />{" "}
             </span>
           </span>
         </div>
-        <div className="footer_names">
+        <div className="footer_names" style={{ display: "none" }}>
           {texts.global.bride} &amp; {texts.global.groom}
         </div>
         <div className="footer_socials">
           <ul>
             <li>
               <Link to="/">
-                <img src="images/social/twitter.png" alt="" title="" />
+                <img src="/images/social/twitter.png" alt="" title="" />
               </Link>
             </li>
             <li>
               <Link to="/">
-                <img src="images/social/facebook.png" alt="" title="" />
+                <img src="/images/social/facebook.png" alt="" title="" />
               </Link>
             </li>
             <li>
               <Link to="/">
-                <img src="images/social/pinterest.png" alt="" title="" />
+                <img src="/images/social/pinterest.png" alt="" title="" />
               </Link>
             </li>
             <li>
               <Link to="/">
-                <img src="images/social/vimeo.png" alt="" title="" />
+                <img src="/images/social/vimeo.png" alt="" title="" />
               </Link>
             </li>
             <li>
               <Link to="/">
-                <img src="images/social/google.png" alt="" title="" />
+                <img src="/images/social/google.png" alt="" title="" />
               </Link>
             </li>
             <li>
               <Link to="/">
-                <img src="images/social/instagram.png" alt="" title="" />
+                <img src="/images/social/instagram.png" alt="" title="" />
               </Link>
             </li>
             <li>
               <Link to="/">
-                <img src="images/social/youtube.png" alt="" title="" />
+                <img src="/images/social/youtube.png" alt="" title="" />
               </Link>
             </li>
           </ul>
