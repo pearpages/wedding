@@ -11,15 +11,15 @@
 
 ## Services
 
-|Feature|Service|
-|---|---|
-|Domain|https://www.godaddy.com/|
-|Email|https://www.mailgun.com/|
-|CDN|AWS S3, AWS CloudFront and https://cloudinary.com/|
-|DNS|https://www.cloudflare.com/|
-|Backend|https://www.heroku.com/|
-|FE hosting |https://www.heroku.com/|
-|Persistance|Heroku MongoDB mLab|
+| Feature     | Service                                                    |
+| ----------- | ---------------------------------------------------------- |
+| Domain      | https://www.godaddy.com/                                   |
+| Email       | https://www.mailgun.com/                                   |
+| CDN         | Fastly, AWS S3, AWS CloudFront and https://cloudinary.com/ |
+| DNS         | https://www.cloudflare.com/                                |
+| Backend     | https://www.heroku.com/                                    |
+| FE hosting  | https://www.heroku.com/                                    |
+| Persistance | Heroku MongoDB mLab                                        |
 
 ---
 
@@ -38,9 +38,10 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js
 ```ts
 import React, { useContext } from "react";
 
-import TextContext from "../core/TextContext";
+import { Texts } from "types";
+import { TextContext } from "core";
 
-const texts: { [key: string]: any } = useContext(TextContext);
+const texts: Texts = useContext(TextContext);
 ```
 
 ---
