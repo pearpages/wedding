@@ -1,6 +1,7 @@
 import React from "react";
 
-import { BigHeader, Content } from "components";
+import { BigHeader } from "./BigHeader";
+import { Content } from "./Content";
 
 export enum MOD {
   MOD1 = "page_header_trans--mod1",

@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-import { Content, Page, MOD } from "components";
+import { Page, MOD } from "components";
 
 export function NoMatch() {
   let location = useLocation();
@@ -13,7 +13,7 @@ export function NoMatch() {
 
   return (
     <Page title="404" subContent={subContent} mod={MOD.MOD1}>
-      <Content>{random}</Content>
+      {random}
     </Page>
   );
 }
