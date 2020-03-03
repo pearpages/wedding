@@ -85,7 +85,7 @@ blockquote {
 }
 span.love_quote {
   font-style: italic;
-  background: url(images/heart_icon.png) no-repeat left;
+  background: url(/images/heart_icon.png) no-repeat left;
   padding: 10px 0 10px 35px;
   margin: 15px 20px;
   display: block;
@@ -99,7 +99,7 @@ a:hover {
 }
 a.more {
   display: block;
-  background: url(images/bullet.gif) no-repeat left;
+  background: url(/images/bullet.gif) no-repeat left;
   padding: 0 0 0 20px;
   margin: 15px 0 0 0;
   float: right;
@@ -269,7 +269,7 @@ nav.menu {
   padding: 0;
   text-align: center;
   width: 100%;
-  background: url(images/menu_border_bottom.png) no-repeat center bottom;
+  background: url(/images/menu_border_bottom.png) no-repeat center bottom;
   height: 85px;
   position: absolute;
   top: 0px;
@@ -362,12 +362,12 @@ ul#main_menu ul li a:hover {
 }
 span.swirl_left {
   display: inline-block;
-  background: url(images/swirl_left.png) no-repeat left;
+  background: url(/images/swirl_left.png) no-repeat left;
   padding: 0 0 0 130px;
 }
 span.swirl_right {
   display: inline-block;
-  background: url(images/swirl_right.png) no-repeat right;
+  background: url(/images/swirl_right.png) no-repeat right;
   padding: 10px 130px 10px 0px;
 }
 .title_under {
@@ -392,7 +392,7 @@ span.swirl_right {
   z-index: 666;
   top: 0px;
   left: 0px;
-  background: url(images/trans_black.png) repeat;
+  background: url(/images/trans_black.png) repeat;
 }
 .skippr {
   width: 100%;
@@ -439,7 +439,7 @@ span.swirl_right {
 .skippr-nav-element-bubble {
   width: 19px;
   height: 17px;
-  background: url(images/bullet.png) no-repeat center;
+  background: url(/images/bullet.png) no-repeat center;
   margin: 0 4px;
 }
 .skippr-nav-element-block {
@@ -448,7 +448,7 @@ span.swirl_right {
 }
 .skippr-nav-element:hover,
 .skippr-nav-element-active {
-  background: url(images/bullet_hover.png) no-repeat center;
+  background: url(/images/bullet_hover.png) no-repeat center;
 }
 .skippr-arrow {
   position: absolute;
@@ -516,7 +516,7 @@ span.swirl_right {
   height: 150px;
   padding: 20px 0 0 0;
   margin: 0 12px;
-  background: url(images/countdown_frame.png) no-repeat center;
+  background: url(/images/countdown_frame.png) no-repeat center;
   text-align: center;
   font-size: 36px;
   color: #ffffff;
@@ -542,12 +542,12 @@ span.countdown_amount {
 }
 span.swirl_left_small {
   display: inline-block;
-  background: url(images/swirl_left_small.png) no-repeat left;
+  background: url(/images/swirl_left_small.png) no-repeat left;
   padding: 0 0 0 100px;
 }
 span.swirl_right_small {
   display: inline-block;
-  background: url(images/swirl_right_small.png) no-repeat right;
+  background: url(/images/swirl_right_small.png) no-repeat right;
   padding: 0 100px 0 0px;
 }
 .countdown_descr {
@@ -676,7 +676,7 @@ a.thumb_read_more:hover {
   width: 100%;
 }
 .carousel_container_image {
-  background: url(images/pattern_trans_black.png) repeat;
+  background: url(/images/pattern_trans_black.png) repeat;
 }
 .full_width_carousel h2 {
   text-align: center;
@@ -721,7 +721,7 @@ span.carousel_titles {
   width: 215px;
   height: 215px;
   display: block;
-  background: url(images/pattern_trans_black.png) repeat;
+  background: url(/images/pattern_trans_black.png) repeat;
   z-index: 9999;
   text-align: center;
   transition: opacity 0.7s, transform 0.7s;
@@ -772,7 +772,7 @@ span.subtitle {
   padding: 0 0 40px 0;
 }
 .bottom_icon {
-  background: url(images/bottom_icons_frame.png) no-repeat center;
+  background: url(/images/bottom_icons_frame.png) no-repeat center;
   text-align: center;
 }
 
@@ -794,7 +794,7 @@ span.subtitle {
   font-weight: 800;
   padding: 0px 0 20px 0;
   margin: 0 0 60px 0;
-  background: url(images/blog_divider.png) no-repeat center bottom;
+  background: url(/images/blog_divider.png) no-repeat center bottom;
 }
 .latest_posts .left13,
 .latest_posts .left13_last {
@@ -804,7 +804,7 @@ span.subtitle {
 .post_info {
   width: 80%;
   height: 80%;
-  background: url(images/pattern_trans_white.png) repeat;
+  background: url(/images/pattern_trans_white.png) repeat;
   position: absolute;
   top: 10%;
   left: 10%;
@@ -955,7 +955,7 @@ span.post_cat {
   list-style: none;
 }
 .blog_single ul li {
-  background: url(images/bullet.gif) no-repeat left;
+  background: url(/images/bullet.gif) no-repeat left;
   padding: 0 0 0 20px;
   margin: 10px 0;
 }
@@ -1078,7 +1078,7 @@ img.avatar {
   height: auto;
 }
 .general_header {
-  background: url(images/header.jpg) no-repeat center center;
+  background: url(/images/header.jpg) no-repeat center center;
 }
 .contact_header {
   background: url($image3) no-repeat top center;
@@ -1193,7 +1193,7 @@ h3.form_subtitle {
   padding: 0 0 20px 0;
   margin: 0 0 40px 0;
   clear: both;
-  background: url(images/blog_divider.png) no-repeat center bottom;
+  background: url(/images/blog_divider.png) no-repeat center bottom;
 }
 h3.form_toptitle {
   text-align: center;
@@ -1367,12 +1367,12 @@ label#loader {
 }
 span.swirl_left_transparent {
   display: inline-block;
-  background: url(images/swirl_left_transparent.png) no-repeat left;
+  background: url(/images/swirl_left_transparent.png) no-repeat left;
   padding: 0 0 0 140px;
 }
 span.swirl_right_transparent {
   display: inline-block;
-  background: url(images/swirl_right_transparent.png) no-repeat right;
+  background: url(/images/swirl_right_transparent.png) no-repeat right;
   padding: 0 140px 0 0px;
 }
 .footer_socials {
@@ -1593,7 +1593,7 @@ span.swirl_right_transparent {
     padding: 5px 0;
     display: inline-block;
     line-height: 20px;
-    background: url(images/menu_border_bottom.png) no-repeat center bottom;
+    background: url(/images/menu_border_bottom.png) no-repeat center bottom;
   }
   ul#main_menu li:last-child {
     background: none;
@@ -1747,12 +1747,12 @@ span.swirl_right_transparent {
   }
   span.swirl_left {
     display: inline-block;
-    background: url(images/swirl_left.png) no-repeat left bottom;
+    background: url(/images/swirl_left.png) no-repeat left bottom;
     padding: 0 0 0 100px;
   }
   span.swirl_right {
     display: inline-block;
-    background: url(images/swirl_right.png) no-repeat right bottom;
+    background: url(/images/swirl_right.png) no-repeat right bottom;
     padding: 20px 100px 50px 0px;
   }
   .title_under {
@@ -1770,12 +1770,12 @@ span.swirl_right_transparent {
   }
   span.swirl_left_transparent {
     display: inline-block;
-    background: url(images/swirl_left_transparent.png) no-repeat left bottom;
+    background: url(/images/swirl_left_transparent.png) no-repeat left bottom;
     padding: 0 0 0 50px;
   }
   span.swirl_right_transparent {
     display: inline-block;
-    background: url(images/swirl_right_transparent.png) no-repeat right bottom;
+    background: url(/images/swirl_right_transparent.png) no-repeat right bottom;
     padding: 0 50px 50px 0px;
   }
   .slider_container {
@@ -1803,7 +1803,7 @@ span.swirl_right_transparent {
     height: 60px;
     padding: 10px 0 0 0;
     margin: 0 5px;
-    background: url(images/countdown_frame_small.png) no-repeat center;
+    background: url(/images/countdown_frame_small.png) no-repeat center;
     text-align: center;
     font-size: 22px;
     color: #ffffff;
@@ -1870,7 +1870,7 @@ span.swirl_right_transparent {
     width: 215px;
     height: 215px;
     display: block;
-    background: url(images/pattern_trans_black.png) repeat;
+    background: url(/images/pattern_trans_black.png) repeat;
     z-index: 9999;
     text-align: center;
     transition: opacity 0.7s, transform 0.7s;

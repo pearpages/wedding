@@ -74,7 +74,7 @@ span.carousel_titles {
 ul#main_menu li a.selected,
 ul#main_menu li a:hover,
 .footer_menu li {
-  background: url(../images/menu_bullet.png) no-repeat left;
+  background: url(/images/menu_bullet.png) no-repeat left;
 }
 
 @media screen and (max-width: 680px) {
