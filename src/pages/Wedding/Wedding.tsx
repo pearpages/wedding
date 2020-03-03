@@ -46,8 +46,14 @@ export function Wedding() {
             <img src={santMarc} alt="Sant Marc" />
           </div>
         </HalfRight>
-        <HalfLeft />
-        <HalfRight />
+        <HalfLeft>
+          <div className="image">
+            <img src={comoLlegar} alt="Como llegar" />
+          </div>
+        </HalfLeft>
+        <HalfRight>
+          <p>Explicación de como llegar...</p>
+        </HalfRight>
       </>
     </Page>
   );
