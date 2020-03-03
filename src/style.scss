@@ -1096,18 +1096,18 @@ img.avatar {
     background-size: cover;
   }
   &--mod3 {
-    background: url($image3) no-repeat top center;
+    background: url($image3) no-repeat center center;
     background-size: cover;
   }
   &--mod4 {
     background: url($image4) no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
   }
   &--mod5 {
     background: url($image5) no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
   }
   &--mod6 {
     background: url($image6) no-repeat;

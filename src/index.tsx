@@ -5,7 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 import { appendScriptInTheDOM } from "./helpers";
 
 import "./style.scss";
-import "./colors/green.css";
+import "./colors/green.scss";
 import "./css/carousel.css";
 
 appendScriptInTheDOM("/js/jquery-1.11.1.min.js");

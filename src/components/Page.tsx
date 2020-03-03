@@ -1,14 +1,14 @@
 import React from "react";
 
-import { BigHeader } from "components/BigHeader";
+import { BigHeader, Content } from "components";
 
 export enum MOD {
-  MOD1 = "page_header_trans page_header_trans--mod1",
-  MOD2 = "page_header_trans page_header_trans--mod2",
-  MOD3 = "page_header_trans page_header_trans--mod3",
-  MOD4 = "page_header_trans page_header_trans--mod4",
-  MOD5 = "page_header_trans page_header_trans--mod5",
-  MOD6 = "page_header_trans page_header_trans--mod6"
+  MOD1 = "page_header_trans--mod1",
+  MOD2 = "page_header_trans--mod2",
+  MOD3 = "page_header_trans--mod3",
+  MOD4 = "page_header_trans--mod4",
+  MOD5 = "page_header_trans--mod5",
+  MOD6 = "page_header_trans--mod6"
 }
 
 export function Page({
@@ -27,7 +27,7 @@ export function Page({
       <BigHeader className={mod} title={title.toUpperCase()}>
         {subContent}
       </BigHeader>
-      {children}
+      <Content>{children}</Content>
     </>
   );
 }
