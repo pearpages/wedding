@@ -4,7 +4,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { appendScriptInTheDOM } from "./helpers";
 
-import "./style.css";
+import "./style.scss";
 import "./colors/green.css";
 import "./css/carousel.css";
 

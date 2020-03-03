@@ -1,3 +1,9 @@
+$image1: "https://d16jncjlowucvw.cloudfront.net/slider/slide1_e4ddpy.jpg";
+$image2: "https://d16jncjlowucvw.cloudfront.net/slider/slide2_ma5nd6.jpg";
+$image3: "https://d16jncjlowucvw.cloudfront.net/slider/slide3_ewhgf3.jpg";
+$image4: "/images/recommendations/alojamiento.jpeg";
+$image5: "/images/recommendations/restaurantes.jpeg";
+$image6: "/images/recommendations/planes.jpeg";
 /*------------------------------------------------------------------
 [Main Stylesheet]
 
@@ -7,7 +13,6 @@ Created:	04 November 2014
 Last updated:	12 October 2016
 Template:	Wedding Bells HTML,CSS Template
 -------------------------------------------------------------------*/
-
 /*-----------------------------------------------------------------
 [Table of Contents]
 
@@ -41,8 +46,7 @@ Template:	Wedding Bells HTML,CSS Template
     - @media screen and (max-width: 1180px)
 	- @media screen and (max-width: 680px)
 */
-/*===============================================*/
-/* 1. RESET		 						 */
+/*===============================================*/ /* 1. RESET		 						 */
 /*===============================================*/
 @import "css/reset.css";
 
@@ -668,8 +672,7 @@ a.thumb_read_more:hover {
 /* 5-5. CAROUSEL 	 */
 /*---------------------------*/
 .carousel_container {
-  background: url(https://d16jncjlowucvw.cloudfront.net/slider/slide2_ma5nd6.jpg)
-    no-repeat center center;
+  background: url($image2) no-repeat center center;
   width: 100%;
 }
 .carousel_container_image {
@@ -1078,13 +1081,39 @@ img.avatar {
   background: url(images/header.jpg) no-repeat center center;
 }
 .contact_header {
-  background: url(images/slider/slide3.jpg) no-repeat top center;
+  background: url($image3) no-repeat top center;
   background-size: cover;
 }
 .page_header_trans {
-  background: url(images/trans_black.png) repeat;
   width: 100%;
   padding: 160px 0 80px 0;
+  &--mod1 {
+    background: url($image1) no-repeat top center;
+    background-size: cover;
+  }
+  &--mod2 {
+    background: url($image2) no-repeat top center;
+    background-size: cover;
+  }
+  &--mod3 {
+    background: url($image3) no-repeat top center;
+    background-size: cover;
+  }
+  &--mod4 {
+    background: url($image4) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+  &--mod5 {
+    background: url($image5) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+  &--mod6 {
+    background: url($image6) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 .page_header_title {
   width: 1180px;
@@ -1949,7 +1978,7 @@ span.swirl_right_transparent {
     margin: 0px;
   }
   .checkbox_container {
-    width: \95%;
+    width: "95%";
     float: left;
     clear: both;
     text-align: left;

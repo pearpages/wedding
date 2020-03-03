@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { ROUTES } from "Routes";
 import { appendScriptInTheDOM } from "helpers";
 import { Texts } from "types";
 
@@ -26,7 +27,7 @@ export function Countdown({ texts }: { texts: Texts }) {
       <div className="rsvp_button">
         <span className="swirl_left_small">
           <span className="swirl_right_small">
-            <Link to="/">{texts.countdown.button}</Link>
+            <Link to={ROUTES.RSVP}>{texts.countdown.button}</Link>
           </span>
         </span>
       </div>

@@ -1,7 +1,4 @@
 import React, { useContext } from "react";
-import image1 from "./images/image1.jpeg";
-import image2 from "./images/image2.jpeg";
-import image3 from "./images/image3.jpeg";
 
 import { TextContext } from "core";
 import { Texts } from "types";
@@ -19,7 +16,10 @@ export function Recommendations() {
         <div className="left13_first">
           <h3>{texts.hotels.title}</h3>
           <div className="image">
-            <img src={image1} alt={texts.hotels.title} />
+            <img
+              src="/images/recommendations/alojamiento.jpeg"
+              alt={texts.hotels.title}
+            />
           </div>
           <ReadMore route={ROUTES.HOTELS} />
         </div>
@@ -27,7 +27,10 @@ export function Recommendations() {
         <div className="left13">
           <h3>{texts.restaurants.title}</h3>
           <div className="image">
-            <img src={image2} alt={texts.restaurants.title} />
+            <img
+              src="/images/recommendations/restaurantes.jpeg"
+              alt={texts.restaurants.title}
+            />
           </div>
           <ReadMore route={ROUTES.RESTAURANTS} />
         </div>
@@ -35,7 +38,10 @@ export function Recommendations() {
         <div className="left13_last">
           <h3>{texts.plans.title}</h3>
           <div className="image">
-            <img src={image3} alt={texts.plans.title} />
+            <img
+              src="/images/recommendations/planes.jpeg"
+              alt={texts.plans.title}
+            />
           </div>
           <ReadMore route={ROUTES.PLANS} />
         </div>
