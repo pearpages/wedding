@@ -12,3 +12,5 @@ export * from "./ReadMore";
 export * from "./ScrollToTop";
 export * from "./Slider";
 export * from "./Recommendations";
+export * from "./HalfLeft";
+export * from "./HalfRight";
