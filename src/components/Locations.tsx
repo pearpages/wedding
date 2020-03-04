@@ -29,13 +29,13 @@ function Location({
       <h2>{title}</h2>
       <span className="subtitle">{subtitle}</span>
       <p className="address address--margin" {...renderHtml(address)}></p>
-      <iframe
+      {/* <iframe
         title={title}
         style={{ border: "1px double white", marginBottom: "10px" }}
         src={iframe}
         width="280"
         height="300"
-      ></iframe>
+      ></iframe> */}
       <ReadMore route={route} />
     </>
   );

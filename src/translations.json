@@ -68,7 +68,8 @@
   "presents": { "title": "{global.presents}" },
   "contact": {
     "title": "{global.contact}",
-    "subTitle": "Por favor, no dudes en contactarnos para cualquier duda"
+    "subTitle": "Por favor, no dudes en contactarnos para cualquier duda",
+    "contentTitle": "WE WOULD LOVE TO HEAR FROM YOU"
   },
   "hotels": {
     "title": "{global.hotels}",
