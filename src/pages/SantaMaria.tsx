@@ -1,15 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import { Texts } from "types";
-import { TextContext } from "core";
+import { t } from "helpers";
 import { Page, Full, MOD } from "components";
 
 export function SantaMaria() {
-  const texts: Texts = useContext(TextContext);
   return (
-    <Page title={texts.santaMaria.title} mod={MOD.MOD3}>
-      <Full title={texts.santaMaria.subtitle}>
-        {texts.santaMaria.description}
+    <Page title={t("santaMaria.title")} mod={MOD.MOD3}>
+      <Full title={t("santaMaria.subtitle")}>
+        <>{t("santaMaria.description")}</>
       </Full>
     </Page>
   );

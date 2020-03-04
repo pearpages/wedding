@@ -28,7 +28,7 @@ function Location({
       </div>
       <h2>{title}</h2>
       <span className="subtitle">{subtitle}</span>
-      <p style={{ textAlign: "left" }} {...renderHtml(address)}></p>
+      <p className="address address--margin" {...renderHtml(address)}></p>
       <iframe
         title={title}
         style={{ border: "1px double white", marginBottom: "10px" }}

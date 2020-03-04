@@ -5,7 +5,7 @@ import tallo from "./images/tallo.jpeg";
 import React from "react";
 
 import { Page, MOD, HalfLeft, HalfRight } from "components";
-import { t } from "helpers";
+import { t, renderHtml } from "helpers";
 
 export function Wedding() {
   return (
@@ -24,6 +24,10 @@ export function Wedding() {
               <li>Dirección</li>
               <li>Hora</li>
             </ul>
+            <p
+              className="address"
+              {...renderHtml(t("santaMaria.location"))}
+            ></p>
           </>
         </HalfRight>
         <HalfLeft title={t("global.reception")}>
@@ -37,6 +41,7 @@ export function Wedding() {
               <li>Dirección:</li>
               <li>Hora:</li>
             </ul>
+            <p className="address" {...renderHtml(t("santMarc.location"))}></p>
           </>
         </HalfLeft>
         <HalfRight>
