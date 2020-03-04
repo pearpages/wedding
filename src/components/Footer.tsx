@@ -77,7 +77,7 @@ export function Footer() {
                   to={route.path}
                   activeClassName={route.isAnchor ? "" : "selected"}
                 >
-                  {texts.navigation[route.label]}
+                  {route.label}
                 </NavLink>
               </li>
             ))}

@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { t } from "helpers";
 import { ROUTES } from "Routes";
 import { appendScriptInTheDOM } from "helpers";
-import { Texts } from "types";
 
-export function Countdown({ texts }: { texts: Texts }) {
+export function Countdown() {
   const done = setInterval(() => {
     try {
       appendScriptInTheDOM("/js/jquery.countdown.js");
@@ -21,13 +21,13 @@ export function Countdown({ texts }: { texts: Texts }) {
 
   return (
     <div className="countdown_container">
-      <h2 className="centered_title">{texts.countdown.title}</h2>
+      <h2 className="centered_title">{t("countdown.title")}</h2>
       <div id="defaultCountdown"></div>
-      <div className="countdown_message">{texts.countdown.message}</div>
+      <div className="countdown_message">{t("countdown.message")}</div>
       <div className="rsvp_button">
         <span className="swirl_left_small">
           <span className="swirl_right_small">
-            <Link to={ROUTES.RSVP}>{texts.countdown.button}</Link>
+            <Link to={ROUTES.RSVP}>{t("countdown.button")}</Link>
           </span>
         </span>
       </div>

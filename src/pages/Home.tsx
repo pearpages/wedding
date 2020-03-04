@@ -18,7 +18,7 @@ export function Home() {
     <>
       <Title hasBirds={false} texts={texts} />
       <Slider />
-      <Countdown texts={texts} />
+      <Countdown />
       <Recommendations />
       {/* <BrideNGroom /> */}
       {/* <Carousel texts={texts} /> */}

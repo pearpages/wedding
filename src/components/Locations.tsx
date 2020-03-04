@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Texts } from "types";
 import { ROUTES } from "Routes";
 import { TextContext } from "core";
-import { renderHtml } from "helpers";
+import { renderHtml, t } from "helpers";
 import { ReadMore } from "components";
 
 function Location({
@@ -48,7 +48,7 @@ export function Locations() {
       <div className="full_width_centered">
         <div className="left12_first">
           <Location
-            title={texts["santaMaria"].title}
+            title={t("santaMaria.title").toUpperCase()}
             subtitle={texts["santaMaria"].subtitle}
             address={texts["santaMaria"].location}
             iframe={texts["santaMaria"].iframe}
@@ -58,7 +58,7 @@ export function Locations() {
         </div>
         <div className="left12_last">
           <Location
-            title={texts["santMarc"].title}
+            title={t("santMarc.title").toUpperCase()}
             subtitle={texts["santMarc"].subtitle}
             address={texts["santMarc"].location}
             iframe={texts["santMarc"].iframe}

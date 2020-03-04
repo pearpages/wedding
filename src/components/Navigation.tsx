@@ -1,13 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 import { appendScriptInTheDOM } from "helpers";
-import { Route, Texts } from "types";
+import { Route } from "types";
 import { ROUTE_MAPPING } from "Routes";
-import { TextContext } from "core";
 
 export function Navigation() {
-  const texts: Texts = useContext(TextContext);
   const done = setInterval(() => {
     try {
       appendScriptInTheDOM("/js/menu.js");
@@ -45,14 +43,14 @@ export function Navigation() {
                   activeClassName={route.isAnchor ? "none" : "selected"}
                   to={route.path}
                 >
-                  {texts.navigation[route.label]}
+                  {route.label}
                 </NavLink>
                 {route.children ? (
                   <ul>
                     {route.children.map((route: Route) => (
                       <li key={route.label}>
                         <NavLink exact activeClassName="none" to={route.path}>
-                          {texts.navigation[route.label]}
+                          {route.label}
                         </NavLink>
                       </li>
                     ))}

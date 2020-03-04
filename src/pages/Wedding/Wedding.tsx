@@ -2,23 +2,21 @@ import comoLlegar from "./images/como-llegar.jpeg";
 import santMarc from "./images/sant-marc.jpeg";
 import tallo from "./images/tallo.jpeg";
 
-import React, { useContext } from "react";
+import React from "react";
 
-import { Texts } from "types";
-import { TextContext } from "core";
 import { Page, MOD, HalfLeft, HalfRight } from "components";
+import { t } from "helpers";
 
 export function Wedding() {
-  const texts: Texts = useContext(TextContext);
   return (
-    <Page title={texts.wedding.title} mod={MOD.MOD1}>
+    <Page title={t("wedding.title")} mod={MOD.MOD1}>
       <>
         <HalfLeft>
           <div className="image">
             <img src={tallo} alt="Santa Maria de Talló" />
           </div>
         </HalfLeft>
-        <HalfRight>
+        <HalfRight title={t("global.ceremony")}>
           <>
             <p>La celebración será al mediodía del sábado 12.</p>
             <ul>
@@ -28,7 +26,7 @@ export function Wedding() {
             </ul>
           </>
         </HalfRight>
-        <HalfLeft>
+        <HalfLeft title={t("global.reception")}>
           <>
             <p>
               Tras la ceremonia, nos trasladaremos a un precioso Hotel en el
@@ -51,7 +49,7 @@ export function Wedding() {
             <img src={comoLlegar} alt="Como llegar" />
           </div>
         </HalfLeft>
-        <HalfRight>
+        <HalfRight title={t("global.howtoGetThere")}>
           <p>Explicación de como llegar...</p>
         </HalfRight>
       </>

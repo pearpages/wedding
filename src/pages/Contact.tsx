@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import { Texts } from "types";
-import { TextContext } from "core";
+import { t } from "helpers";
 import { Page, MOD } from "components";
 
 export function Contact() {
-  const texts: Texts = useContext(TextContext);
-  return <Page title={texts.contact.title} mod={MOD.MOD1}></Page>;
+  return <Page title={t("contact.title")} mod={MOD.MOD1}></Page>;
 }

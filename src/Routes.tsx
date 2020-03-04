@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
+import { t } from "helpers";
 import { Route as AppRoute } from "types";
 import {
   Home,
@@ -31,21 +32,21 @@ export enum ROUTES {
 }
 
 export const ROUTE_MAPPING: AppRoute[] = [
-  { path: ROUTES.HOME, label: "home" },
-  { path: ROUTES.WEDDING, label: "wedding" },
-  { path: ROUTES.HOTELS, label: "hotels" },
+  { path: ROUTES.HOME, label: t("global.home") },
+  { path: ROUTES.WEDDING, label: t("global.wedding") },
+  { path: ROUTES.HOTELS, label: t("global.hotels") },
   {
     path: ROUTES.RECOMMENDATIONS,
     isAnchor: true,
-    label: "recommendations",
+    label: t("global.recommendations"),
     children: [
-      { path: ROUTES.RESTAURANTS, label: "restaurants" },
-      { path: ROUTES.PLANS, label: "plans" }
+      { path: ROUTES.RESTAURANTS, label: t("global.restaurants") },
+      { path: ROUTES.PLANS, label: t("global.plans") }
     ]
   },
-  { path: ROUTES.PRESENTS, label: "presents" },
-  { path: ROUTES.RSVP, label: "rsvp" },
-  { path: ROUTES.CONTACT, label: "contact" }
+  { path: ROUTES.PRESENTS, label: t("global.presents") },
+  { path: ROUTES.RSVP, label: t("global.rsvp") },
+  { path: ROUTES.CONTACT, label: t("global.contact") }
 ];
 
 export default function Routes() {
