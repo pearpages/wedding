@@ -19,13 +19,13 @@ export function Page({
   mod
 }: {
   title: string;
-  mod: MOD;
+  mod?: MOD;
   subContent?: JSX.Element;
   children?: JSX.Element;
 }) {
   return (
     <>
-      <BigHeader className={mod} title={title.toUpperCase()}>
+      <BigHeader className={mod || ""} title={title.toUpperCase()}>
         {subContent}
       </BigHeader>
       <Content>{children}</Content>

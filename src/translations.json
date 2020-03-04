@@ -2,6 +2,7 @@
   "global": {
     "bride": "Marta",
     "groom": "Pere",
+    "email": "hola@martapere.com",
     "date": "12.09.2020",
     "readMore": "LEER MÁS",
     "ceremony": "Ceremonia",
@@ -65,7 +66,10 @@
   "wedding": { "title": "{global.wedding}" },
   "rsvp": { "title": "{global.rsvp}" },
   "presents": { "title": "{global.presents}" },
-  "contact": { "title": "{global.contact}" },
+  "contact": {
+    "title": "{global.contact}",
+    "subTitle": "Por favor, no dudes en contactarnos para cualquier duda"
+  },
   "hotels": { "title": "{global.hotels}" },
   "plans": { "title": "{global.plans}" },
   "restaurants": { "title": "{global.restaurants}" }
