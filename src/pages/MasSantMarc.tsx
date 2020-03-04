@@ -7,7 +7,7 @@ export function MasSantMarc() {
   return (
     <Page title={t("santMarc.title")} mod={MOD.MOD3}>
       <Full title={t("santMarc.subtitle")}>
-        <>{t("santMarc.description")}</>
+        <p>{t("santMarc.description")}</p>
       </Full>
     </Page>
   );

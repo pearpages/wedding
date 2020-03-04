@@ -4,13 +4,12 @@ export function Full({
   title,
   children
 }: {
-  title: string;
+  title?: string;
   children?: JSX.Element;
 }) {
   return (
     <div className="left_full">
-      <h2>{title}</h2>
-
+      {title ? <h2>{title}</h2> : null}
       {children}
     </div>
   );

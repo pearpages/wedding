@@ -70,7 +70,11 @@
     "title": "{global.contact}",
     "subTitle": "Por favor, no dudes en contactarnos para cualquier duda"
   },
-  "hotels": { "title": "{global.hotels}" },
+  "hotels": {
+    "title": "{global.hotels}",
+    "left": "La Cerdanya es un paraíso en el que relajarse y disfrutar de sus paisajes y actividades al aire libre, por lo que encontrareis variedad de hoteles en los que alojaros durante el fin de semana.",
+    "right": "Os recomendamos realizar la reserva lo antes posible ya que durante esas fechas los hoteles suelen tener bastante demanda. A continuación os dejamos algunas propuestas:"
+  },
   "plans": { "title": "{global.plans}" },
   "restaurants": { "title": "{global.restaurants}" }
 }
