@@ -68,7 +68,15 @@
   "presents": { "title": "{global.presents}" },
   "contact": {
     "title": "{global.contact}",
-    "subTitle": "Por favor, no dudes en contactarnos para cualquier duda"
+    "subTitle": "Por favor, no dudes en contactarnos para cualquier duda",
+    "contentTitle": "WE WOULD LOVE TO HEAR FROM YOU",
+    "name": "NOMBRE",
+    "email": "EMAIL",
+    "phone": "TELÉFONO",
+    "message": "MENSAJE",
+    "sendMessage": "MANDAR MENSAJE",
+    "required": "El campo es obligatorio",
+    "messageSent": "Your message has been sent. Thank you!"
   },
   "hotels": {
     "title": "{global.hotels}",

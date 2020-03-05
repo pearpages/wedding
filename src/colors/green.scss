@@ -54,7 +54,7 @@ span.subtitle {
 a.thumb_read_more,
 .full_width_carousel .left14 h3,
 .full_width_carousel .left14_last h3,
-input.form_submit_contact,
+.form_submit_contact,
 input[type="checkbox"] + label:before,
 input[type="checkbox"]:checked + label:before {
   background-color: #b5af47;
@@ -125,4 +125,10 @@ ul#main_menu li a:hover,
   &--margin {
     margin: 20px auto;
   }
+}
+#submit[disabled] {
+  background-color: white;
+  border: 1px solid #b5af47;
+  color: #b5af47;
+  cursor: not-allowed;
 }
