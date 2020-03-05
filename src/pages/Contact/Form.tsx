@@ -32,9 +32,9 @@ export function Form() {
               e.preventDefault();
               const form: any = e.target;
               const formValues = reduceFormValues(form.elements);
-              setIsValidName(formValues.contactname.valid);
-              setIsValidEmail(formValues.contactemail.valid);
-              setisValidMessage(formValues.contactcomments.valid);
+              setIsValidName(formValues.name.valid);
+              setIsValidEmail(formValues.email.valid);
+              setisValidMessage(formValues.message.valid);
               const allFieldsValid = form.checkValidity();
               if (allFieldsValid) {
                 setIsPosting(true);
@@ -51,8 +51,8 @@ export function Form() {
               <input
                 type="text"
                 className="form_input required valid"
-                name="contactname"
-                id="contactname"
+                name="name"
+                id="name"
                 required
                 onChange={e => setIsValidName(e.target.checkValidity())}
               />
@@ -66,10 +66,10 @@ export function Form() {
               <input
                 type="email"
                 className="form_input required email Required"
-                name="contactemail"
+                name="email"
                 placeholder="tu@email.com"
                 required
-                id="contactemail"
+                id="email"
                 onChange={e => setIsValidEmail(e.target.checkValidity())}
               />
               {isValidEmail ? null : <Required />}
@@ -80,8 +80,8 @@ export function Form() {
               <input
                 type="number"
                 className="form_input required valid"
-                name="contactphone"
-                id="contactphone"
+                name="phone"
+                id="phone"
               />
             </div>
             <div className="form_row_full">
@@ -92,8 +92,8 @@ export function Form() {
               <textarea
                 required
                 className="form_textarea_full valid"
-                name="contactcomments"
-                id="contactcomments"
+                name="message"
+                id="message"
                 onChange={e => setisValidMessage(e.target.checkValidity())}
               ></textarea>
               {isValidMessage ? null : <Required />}
