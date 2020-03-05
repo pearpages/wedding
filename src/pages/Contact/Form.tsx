@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 
-import { t } from "helpers";
-import { reduceFormValues } from "helpers";
+import { t, post, reduceFormValues } from "helpers";
 import { Required } from "components";
+import { Contact } from "types";
 
 const Success = () => (
   <h3 className="form_toptitle success" id="Note">
     {t("contact.messageSent")}
   </h3>
+);
+
+const ServerError = () => (
+  <p>
+    Something odd is going on with the server. Try send an email to{" "}
+    <strong>hola@martapere.com</strong>.
+  </p>
 );
 
 export function Form() {
@@ -16,12 +23,14 @@ export function Form() {
   const [isValidName, setIsValidName] = useState(true);
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [isValidMessage, setisValidMessage] = useState(true);
+  const [isServerError, setIsServerError] = useState(false);
   return (
     <>
       {isSuccess ? (
         <Success />
       ) : (
         <>
+          {isServerError ? <ServerError /> : null}
           <p>
             <span>*</span>
             {t("contact.required")}
@@ -38,9 +47,30 @@ export function Form() {
               const allFieldsValid = form.checkValidity();
               if (allFieldsValid) {
                 setIsPosting(true);
-                setTimeout(() => setSuccess(true), 500);
+                const contact: Contact = {
+                  name: formValues.name.value,
+                  email: formValues.email.value,
+                  message: formValues.message.value
+                };
+                if (formValues.phone.value) {
+                  contact.phone = formValues.phone.value;
+                }
+                post("/contact", JSON.stringify(contact))
+                  .then(response => {
+                    if (String(response.status).startsWith("4")) {
+                      setIsServerError(true);
+                      setIsPosting(false);
+                      console.error(response);
+                    } else {
+                      setSuccess(true);
+                    }
+                  })
+                  .catch(e => {
+                    setIsServerError(true);
+                    console.error(e);
+                    setIsPosting(false);
+                  });
               }
-              console.log(formValues, allFieldsValid);
             }}
           >
             <div className="form_row left13_first">
