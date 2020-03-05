@@ -1,5 +1,15 @@
 # Wedding Project
 
+|TODO|
+|---|
+|- Fix location gmaps|
+|- Review translations|
+|- Multilanguage translations|
+|- Persist forms|
+|- Persist messages and send confirmation email -donotreply-|
+
+---
+
 |Contents|
 |---|
 |[Services](##Services)|
