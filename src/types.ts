@@ -5,3 +5,10 @@ export interface Route {
   isAnchor?: boolean;
   children?: Route[];
 }
+
+export interface Contact {
+  name: string;
+  email: string;
+  phone?: string;
+  message: string;
+}
