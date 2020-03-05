@@ -7,6 +7,7 @@
 |- Multilanguage translations|
 |- Persist forms|
 |- Persist messages and send confirmation email -donotreply-|
+|- Forms should also display 500 error messages|
 
 ---
 
