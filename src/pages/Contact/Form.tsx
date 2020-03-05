@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { t } from "helpers";
-import { reduceFormValues } from "./helpers";
+import { reduceFormValues } from "helpers";
 import { Required } from "components";
 
 const Success = () => (
