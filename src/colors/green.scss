@@ -126,3 +126,9 @@ ul#main_menu li a:hover,
     margin: 20px auto;
   }
 }
+#submit[disabled] {
+  background-color: white;
+  border: 1px solid #b5af47;
+  color: #b5af47;
+  cursor: not-allowed;
+}

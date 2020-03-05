@@ -38,6 +38,7 @@ https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js
 
 [Wedding Bells - Responsive Html Template
 ](https://themeforest.net/item/wedding-bells-responsive-wedding-template/9332159)
+[Theme preview](http://preview.themeforest.net/item/wedding-bells-responsive-wedding-template/full_screen_preview/9332159)
 
 ---
 
