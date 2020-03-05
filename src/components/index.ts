@@ -14,3 +14,4 @@ export * from "./Slider";
 export * from "./Recommendations";
 export * from "./HalfLeft";
 export * from "./HalfRight";
+export * from "./Form";

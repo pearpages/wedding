@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { Required } from "components";
+
 export function Form() {
   const [hasPlusOne, setPlusOne] = useState(false);
   return (
@@ -16,6 +18,7 @@ export function Form() {
             name="rsvpname"
             id="rsvpname"
           />
+          <Required />
         </div>
         <div className="form_row left13_last">
           <label>
@@ -35,6 +38,7 @@ export function Form() {
               <option value="SI">SI</option>
             </select>
           </div>
+          <Required />
         </div>
         {hasPlusOne ? (
           <div className="form_row left12_first">
@@ -45,10 +49,11 @@ export function Form() {
               style={{ height: "48px" }}
               type="text"
               className="form_input required"
-              name="rsvpname"
-              id="rsvpname"
+              name="plusone"
+              id="plusone"
               required={hasPlusOne}
             />
+            <Required />
           </div>
         ) : null}
 

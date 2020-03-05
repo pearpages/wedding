@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 import { t } from "helpers";
 import { reduceFormValues } from "./helpers";
-
-const Error = () => <label className="error">{t("contact.required")}</label>; // This field is required.
+import { Required } from "components";
 
 const Success = () => (
   <h3 className="form_toptitle success" id="Note">
@@ -57,7 +56,7 @@ export function Form() {
                 required
                 onChange={e => setIsValidName(e.target.checkValidity())}
               />
-              {isValidName ? null : <Error />}
+              {isValidName ? null : <Required />}
             </div>
             <div className="form_row left13">
               <label>
@@ -66,15 +65,15 @@ export function Form() {
               </label>
               <input
                 type="email"
-                className="form_input required email error"
+                className="form_input required email Required"
                 name="contactemail"
                 placeholder="tu@email.com"
                 required
                 id="contactemail"
                 onChange={e => setIsValidEmail(e.target.checkValidity())}
               />
-              {isValidEmail ? null : <Error />}
-              {/* <label className="error">Please enter a valid email address.</label> */}
+              {isValidEmail ? null : <Required />}
+              {/* <label className="Required">Please enter a valid email address.</label> */}
             </div>
             <div className="form_row left13_last">
               <label>{t("contact.phone")}</label>
@@ -97,7 +96,7 @@ export function Form() {
                 id="contactcomments"
                 onChange={e => setisValidMessage(e.target.checkValidity())}
               ></textarea>
-              {isValidMessage ? null : <Error />}
+              {isValidMessage ? null : <Required />}
             </div>
             <div className="form_row">
               <button
