@@ -1,0 +1,32 @@
+.hotel {
+  display: flex;
+  align-items: flex-end;
+  &__image {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+    border: 10px solid white;
+    background-color: black;
+    width: 500px;
+    height: 400px;
+  }
+}
+
+.small-button {
+  background-color: #b5af47;
+  color: white;
+  padding: 8px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 6px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+@media (max-width: 750px) {
+  .hotel {
+    flex-direction: column;
+    align-items: start;
+    .information {
+      width: 100%;
+    }
+  }
+}
