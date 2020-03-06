@@ -46,7 +46,7 @@ export function Form() {
                   name: formValues.name.value,
                   partner: formValues.partner.value
                 };
-                if (formValues.parterName && formValues.partnerName.value) {
+                if (formValues.partnerName && formValues.partnerName.value) {
                   rsvp.partnerName = formValues.partnerName.value;
                 }
                 if (formValues.food.value) {
