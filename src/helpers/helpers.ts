@@ -56,3 +56,17 @@ export function t(key: string, alternateTexts?: Texts): string {
   } catch (_) {}
   return key;
 }
+
+export const getSymbol = (value: number, symbol: string): string => {
+  const array: any[] = [];
+  array.length = value;
+  array.fill(symbol);
+  return array.join("");
+};
+
+export const getImage = (imagePath: string) => ({
+  style: {
+    background: "url(" + imagePath + ")",
+    backgroundSize: "cover"
+  }
+});

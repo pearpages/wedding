@@ -8,24 +8,6 @@
     height: 275px;
     background-color: black;
   }
-  .information {
-    text-align: left !important;
-    margin-top: 10px;
-    width: 40%;
-    margin-left: 10px;
-    &__name {
-      text-align: left !important;
-      padding: 0;
-      margin: 4px;
-    }
-    &__cousine {
-      font-style: italic;
-      font-weight: bold;
-      padding: 0;
-    }
-    &__address {
-    }
-  }
 }
 
 @media (max-width: 1200px) {
