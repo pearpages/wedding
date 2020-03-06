@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 
 import { t, post, reduceFormValues } from "helpers";
-import { Required } from "components";
+import { Required, Success, ServerError } from "components";
 import { Contact } from "types";
-
-const Success = () => (
-  <h3 className="form_toptitle success" id="Note">
-    {t("contact.messageSent")}
-  </h3>
-);
 
 const ServerError = () => (
   <p>
