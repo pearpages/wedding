@@ -46,7 +46,7 @@ export function Form() {
                   name: formValues.name.value,
                   partner: formValues.partner.value
                 };
-                if (formValues.partnerName.value) {
+                if (formValues.parterName && formValues.partnerName.value) {
                   rsvp.partnerName = formValues.partnerName.value;
                 }
                 if (formValues.food.value) {
@@ -103,6 +103,7 @@ export function Form() {
                     onChange={e => {
                       setPlusOne(e.target.value === "SI");
                       setIsValidSelector(e.target.checkValidity());
+                      console.log(e.target.value);
                     }}
                   >
                     <option value="">--SELECCIONA--</option>
