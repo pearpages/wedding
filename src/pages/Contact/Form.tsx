@@ -1,21 +1,8 @@
 import React, { useState } from "react";
 
 import { t, post, reduceFormValues } from "helpers";
-import { Required } from "components";
+import { Required, Success, ServerError } from "components";
 import { Contact } from "types";
-
-const Success = () => (
-  <h3 className="form_toptitle success" id="Note">
-    {t("contact.messageSent")}
-  </h3>
-);
-
-const ServerError = () => (
-  <p>
-    Something odd is going on with the server. Try send an email to{" "}
-    <strong>hola@martapere.com</strong>.
-  </p>
-);
 
 export function Form() {
   const [isSuccess, setSuccess] = useState(false);

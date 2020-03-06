@@ -12,3 +12,11 @@ export interface Contact {
   phone?: string;
   message: string;
 }
+
+export interface RSVP {
+  name: string;
+  partner: string;
+  partnerName?: string;
+  food?: string;
+  comments?: string;
+}
