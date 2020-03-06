@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import "./Hotels.scss";
 import { t, getSymbol, getImage } from "helpers";
@@ -17,7 +16,12 @@ const Hotel = ({ data }: { data: HotelData }) => (
         Precio {getSymbol(data.price, "€")}
       </div>
       <div className="information__address">{data.address}</div>
-      <a className="small-button" target="_blank" href={data.booking}>
+      <a
+        className="small-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={data.booking}
+      >
         RESERVA
       </a>
     </div>
