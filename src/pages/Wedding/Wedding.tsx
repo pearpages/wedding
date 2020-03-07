@@ -19,11 +19,6 @@ export function Wedding() {
         <HalfRight title={t("global.ceremony")}>
           <>
             <p>La celebración será al mediodía del sábado 12.</p>
-            <ul>
-              <li>Iglesia</li>
-              <li>Dirección</li>
-              <li>Hora</li>
-            </ul>
             <p
               className="address"
               {...renderHtml(t("santaMaria.location"))}
@@ -36,11 +31,6 @@ export function Wedding() {
               Tras la ceremonia, nos trasladaremos a un precioso Hotel en el
               centro del valle en donde seguir la fiesta.
             </p>
-            <ul>
-              <li>Mas Sant Marc:</li>
-              <li>Dirección:</li>
-              <li>Hora:</li>
-            </ul>
             <p className="address" {...renderHtml(t("santMarc.location"))}></p>
           </>
         </HalfLeft>
