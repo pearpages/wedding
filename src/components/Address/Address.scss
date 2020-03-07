@@ -1,0 +1,20 @@
+.address {
+  text-align: left !important;
+  margin-top: 10px;
+  width: 40%;
+  margin-left: 10px;
+  &__title {
+    text-align: left !important;
+    padding: 0;
+    margin: 4px 0;
+  }
+  &__category {
+    font-style: italic;
+    font-weight: bold;
+    padding: 0;
+  }
+  &__body {
+    margin: 0 0 6px;
+    padding: 0;
+  }
+}

@@ -15,3 +15,4 @@ export * from "./Recommendations";
 export * from "./HalfLeft";
 export * from "./HalfRight";
 export * from "./Form";
+export * from "./Address";
