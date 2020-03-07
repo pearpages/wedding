@@ -10,6 +10,7 @@
   }
   .address {
     width: 40%;
+    padding: 10px 30px;
   }
 }
 
@@ -34,6 +35,9 @@
     }
     &__image {
       width: 100%;
+    }
+    .address {
+      padding: 10px;
     }
   }
 }
