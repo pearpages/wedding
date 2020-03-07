@@ -1,20 +1,18 @@
+import React from "react";
+
+import "./Wedding.scss";
 import comoLlegar from "./images/como-llegar.jpeg";
 import santMarc from "./images/sant-marc.jpeg";
 import tallo from "./images/tallo.jpeg";
-
-import React from "react";
-
 import { Page, MOD, HalfLeft, HalfRight } from "components";
-import { t, renderHtml } from "helpers";
+import { t, renderHtml, getImage } from "helpers";
 
 export function Wedding() {
   return (
     <Page title={t("wedding.title")} mod={MOD.MOD1}>
       <>
         <HalfLeft>
-          <div className="image">
-            <img src={tallo} alt="Santa Maria de Talló" />
-          </div>
+          <div className="image" {...getImage(tallo)}></div>
         </HalfLeft>
         <HalfRight title={t("global.ceremony")}>
           <>
@@ -35,17 +33,13 @@ export function Wedding() {
           </>
         </HalfLeft>
         <HalfRight>
-          <div className="image">
-            <img src={santMarc} alt="Sant Marc" />
-          </div>
+          <div className="image" {...getImage(santMarc)}></div>
         </HalfRight>
         <HalfLeft>
-          <div className="image">
-            <img src={comoLlegar} alt="Como llegar" />
-          </div>
+          <div className="image" {...getImage(comoLlegar)}></div>
         </HalfLeft>
         <HalfRight title={t("global.howtoGetThere")}>
-          <p>Explicación de como llegar...</p>
+          {/* Explicació deom arribar */}
         </HalfRight>
       </>
     </Page>
