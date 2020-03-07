@@ -16,3 +16,4 @@ export * from "./HalfLeft";
 export * from "./HalfRight";
 export * from "./Form";
 export * from "./Address";
+export * from "./Map";

@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
-import "./Locations.scss";
 
+import "./Locations.scss";
+import masSantMarc from "./images/mas-sant-marc.png";
+import santaMaria from "./images/santa-maria-de-tallo.png";
 import { Texts } from "types";
 import { ROUTES } from "Routes";
 import { TextContext } from "core";
 import { t } from "helpers";
-import { ReadMore, Address } from "components";
+import { ReadMore, Address, Map } from "components";
 
 function Location({
   title,
@@ -13,7 +15,8 @@ function Location({
   location,
   iframe,
   route,
-  icon
+  icon,
+  image
 }: {
   title: string;
   subtitle: string;
@@ -21,6 +24,7 @@ function Location({
   iframe: string;
   route: string;
   icon: string;
+  image: string;
 }) {
   return (
     <>
@@ -29,19 +33,13 @@ function Location({
       </div>
       <h2>{title}</h2>
       <h3 className="subtitle">{subtitle}</h3>
+      <Map image={image} />
       <Address
         data={{
           title: location.name,
           htmlBody: location.address
         }}
       />
-      {/* <iframe
-        title={title}
-        style={{ border: "1px double white", marginBottom: "10px" }}
-        src={iframe}
-        width="280"
-        height="300"
-      ></iframe> */}
       <ReadMore route={route} />
     </>
   );
@@ -60,6 +58,7 @@ export function Locations() {
             iframe={texts["santaMaria"].iframe}
             route={ROUTES.SANTA_MARIA_DE_TALLO}
             icon={"/images/icon_music.png"}
+            image={santaMaria}
           />
         </div>
         <div className="left12_last">
@@ -70,6 +69,7 @@ export function Locations() {
             iframe={texts["santMarc"].iframe}
             route={ROUTES.MAS_SANT_ARC}
             icon={"/images/icon_music.png"}
+            image={masSantMarc}
           />
         </div>
         {/* <div className="left13_last">
