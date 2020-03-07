@@ -3,20 +3,20 @@ import React, { useContext } from "react";
 import { Texts } from "types";
 import { ROUTES } from "Routes";
 import { TextContext } from "core";
-import { renderHtml, t } from "helpers";
-import { ReadMore } from "components";
+import { t } from "helpers";
+import { ReadMore, Address } from "components";
 
 function Location({
   title,
   subtitle,
-  address,
+  location,
   iframe,
   route,
   icon
 }: {
   title: string;
   subtitle: string;
-  address: string;
+  location: { name: string; address: string };
   iframe: string;
   route: string;
   icon: string;
@@ -27,8 +27,13 @@ function Location({
         <img src={icon} alt="" title="" />
       </div>
       <h2>{title}</h2>
-      <span className="subtitle">{subtitle}</span>
-      <p className="address address--margin" {...renderHtml(address)}></p>
+      <h3 className="subtitle">{subtitle}</h3>
+      <Address
+        data={{
+          title: location.name,
+          htmlBody: location.address
+        }}
+      />
       {/* <iframe
         title={title}
         style={{ border: "1px double white", marginBottom: "10px" }}
@@ -50,20 +55,20 @@ export function Locations() {
           <Location
             title={t("santaMaria.title").toUpperCase()}
             subtitle={texts["santaMaria"].subtitle}
-            address={texts["santaMaria"].location}
+            location={texts["santaMaria"].location}
             iframe={texts["santaMaria"].iframe}
             route={ROUTES.SANTA_MARIA_DE_TALLO}
-            icon={"images/icon_location.png"}
+            icon={"/images/icon_location.png"}
           />
         </div>
         <div className="left12_last">
           <Location
             title={t("santMarc.title").toUpperCase()}
             subtitle={texts["santMarc"].subtitle}
-            address={texts["santMarc"].location}
+            location={texts["santMarc"].location}
             iframe={texts["santMarc"].iframe}
             route={ROUTES.MAS_SANT_ARC}
-            icon={"images/icon_music.png"}
+            icon={"/images/icon_music.png"}
           />
         </div>
         {/* <div className="left13_last">

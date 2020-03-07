@@ -6,7 +6,7 @@ import "./Address.scss";
 
 export interface AddressData {
   title: string;
-  category: string;
+  category?: string;
   htmlBody: string;
   link?: string;
 }
@@ -16,7 +16,7 @@ export function Address({ data }: { data: AddressData }) {
   return (
     <div className="address">
       <h5 className="address__title">{title}</h5>
-      <p className="address__category">{category}</p>
+      {category ? <p className="address__category">{category}</p> : null}
       <p className="address__body" {...renderHtml(htmlBody)}></p>
       {link ? (
         <a

@@ -12,6 +12,7 @@
 |[]|Admin page|
 |[]|Add SEO|
 |[]|Refactor counter to REACT|
+|[]|Create components page|
 
 ---
 

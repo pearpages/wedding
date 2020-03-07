@@ -1,12 +1,13 @@
 .address {
   text-align: left !important;
   margin-top: 10px;
-  width: 40%;
+  width: 100%;
   margin-left: 10px;
   &__title {
     text-align: left !important;
     padding: 0;
     margin: 4px 0;
+    font-weight: 800;
   }
   &__category {
     font-style: italic;
@@ -16,5 +17,6 @@
   &__body {
     margin: 0 0 6px;
     padding: 0;
+    text-align: left !important;
   }
 }
