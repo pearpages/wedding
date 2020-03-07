@@ -30,7 +30,7 @@ export function Page({
         {subContent}
       </BigHeader>
       <Content>{children}</Content>
-      <Locations />
+      {/* <Locations /> */}
     </>
   );
 }
