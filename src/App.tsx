@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import translations from "./translations.json";
 import Routes from "Routes";
 import { TextProvider } from "core";
-import { Footer, Navigation, Locations, ScrollToTop } from "components";
+import { Footer, Navigation, ScrollToTop } from "components";
 
 class App extends Component {
   render() {

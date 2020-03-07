@@ -16,7 +16,8 @@ function Location({
   iframe,
   route,
   icon,
-  image
+  image,
+  gmaps
 }: {
   title: string;
   subtitle: string;
@@ -25,7 +26,9 @@ function Location({
   route: string;
   icon: string;
   image: string;
+  gmaps: string;
 }) {
+  console.log(gmaps);
   return (
     <>
       <div className="bottom_icon">
@@ -37,7 +40,8 @@ function Location({
       <Address
         data={{
           title: location.name,
-          htmlBody: location.address
+          htmlBody: location.address,
+          gmaps: gmaps
         }}
       />
       <ReadMore route={route} />
@@ -59,6 +63,7 @@ export function Locations() {
             route={ROUTES.SANTA_MARIA_DE_TALLO}
             icon={"/images/icon_music.png"}
             image={santaMaria}
+            gmaps={texts["santaMaria"].gmaps}
           />
         </div>
         <div className="left12_last">
@@ -70,6 +75,7 @@ export function Locations() {
             route={ROUTES.MAS_SANT_ARC}
             icon={"/images/icon_music.png"}
             image={masSantMarc}
+            gmaps={texts["santMarc"].gmaps}
           />
         </div>
         {/* <div className="left13_last">
