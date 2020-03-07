@@ -1,0 +1,12 @@
+.map {
+  border: 1px solid #666;
+  display: inline-block;
+  &__image {
+    border: 10px solid white;
+    background-color: black;
+    background-size: cover;
+    background-position: bottom center !important;
+    width: 400px;
+    height: 300px;
+  }
+}

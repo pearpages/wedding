@@ -1,41 +1,49 @@
 import React, { useContext } from "react";
 
+import "./Locations.scss";
+import masSantMarc from "./images/mas-sant-marc.png";
+import santaMaria from "./images/santa-maria-de-tallo.png";
 import { Texts } from "types";
 import { ROUTES } from "Routes";
 import { TextContext } from "core";
-import { renderHtml, t } from "helpers";
-import { ReadMore } from "components";
+import { t } from "helpers";
+import { ReadMore, Address, Map } from "components";
 
 function Location({
   title,
   subtitle,
-  address,
+  location,
   iframe,
   route,
-  icon
+  icon,
+  image,
+  gmaps
 }: {
   title: string;
   subtitle: string;
-  address: string;
+  location: { name: string; address: string };
   iframe: string;
   route: string;
   icon: string;
+  image: string;
+  gmaps: string;
 }) {
+  console.log(gmaps);
   return (
     <>
       <div className="bottom_icon">
         <img src={icon} alt="" title="" />
       </div>
       <h2>{title}</h2>
-      <span className="subtitle">{subtitle}</span>
-      <p className="address address--margin" {...renderHtml(address)}></p>
-      {/* <iframe
-        title={title}
-        style={{ border: "1px double white", marginBottom: "10px" }}
-        src={iframe}
-        width="280"
-        height="300"
-      ></iframe> */}
+      <h3 className="subtitle">{subtitle}</h3>
+      <Map image={image} />
+      <Address
+        data={{
+          title: location.name,
+          htmlBody: location.address,
+          gmaps: gmaps
+        }}
+      />
       <ReadMore route={route} />
     </>
   );
@@ -44,26 +52,30 @@ function Location({
 export function Locations() {
   const texts: Texts = useContext(TextContext);
   return (
-    <div className="home_bottom">
+    <div className="locations home_bottom">
       <div className="full_width_centered">
         <div className="left12_first">
           <Location
             title={t("santaMaria.title").toUpperCase()}
             subtitle={texts["santaMaria"].subtitle}
-            address={texts["santaMaria"].location}
+            location={texts["santaMaria"].location}
             iframe={texts["santaMaria"].iframe}
             route={ROUTES.SANTA_MARIA_DE_TALLO}
-            icon={"images/icon_location.png"}
+            icon={"/images/icon_music.png"}
+            image={santaMaria}
+            gmaps={texts["santaMaria"].gmaps}
           />
         </div>
         <div className="left12_last">
           <Location
             title={t("santMarc.title").toUpperCase()}
             subtitle={texts["santMarc"].subtitle}
-            address={texts["santMarc"].location}
+            location={texts["santMarc"].location}
             iframe={texts["santMarc"].iframe}
             route={ROUTES.MAS_SANT_ARC}
-            icon={"images/icon_music.png"}
+            icon={"/images/icon_music.png"}
+            image={masSantMarc}
+            gmaps={texts["santMarc"].gmaps}
           />
         </div>
         {/* <div className="left13_last">

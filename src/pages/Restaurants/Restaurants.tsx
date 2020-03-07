@@ -4,22 +4,19 @@ import { Restaurant as RestaurantData } from "./data";
 import { data } from "./data";
 import "./Restaurants.scss";
 import { t } from "helpers";
-import { Page, MOD, HalfLeft, HalfRight } from "components";
-import { renderHtml, getSymbol, getImage } from "helpers";
+import { Page, MOD, HalfLeft, HalfRight, Address } from "components";
+import { getSymbol, getImage } from "helpers";
 
 const Restaurant = ({ restaurant }: { restaurant: RestaurantData }) => (
   <div className="restaurant">
     <div className="restaurant__image" {...getImage(restaurant.image)}></div>
-    <div className="information">
-      <h5 className="information__name">
-        {restaurant.name} {getSymbol(restaurant.price, "€")}
-      </h5>
-      <p className="information__cousine">{restaurant.cousine}</p>
-      <p
-        className="information__address"
-        {...renderHtml(restaurant.address)}
-      ></p>
-    </div>
+    <Address
+      data={{
+        title: `${restaurant.name} ${getSymbol(restaurant.price, "€")}`,
+        category: `${restaurant.cousine}`,
+        htmlBody: restaurant.address
+      }}
+    />
   </div>
 );
 

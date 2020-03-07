@@ -8,13 +8,16 @@
     height: 275px;
     background-color: black;
   }
+  .address {
+    width: 40%;
+  }
 }
 
 @media (max-width: 1200px) {
   .restaurant {
     flex-direction: column;
     align-items: start;
-    .information {
+    .address {
       width: 100%;
     }
   }

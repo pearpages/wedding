@@ -1,13 +1,18 @@
 # Wedding Project
 
-|TODO|
-|---|
-|- Fix location gmaps|
-|- Review translations|
-|- Multilanguage translations|
-|- Persist forms|
-|- Persist messages and send confirmation email -donotreply-|
-|- Forms should also display 500 error messages|
+||TODO|
+|---|---|
+|[]|Fix location gmaps|
+|[]|Review translations|
+|[]|Multilanguage translations|
+|[X]|Persist forms|
+|[X]|Persist messages|
+|[]|send confirmation email -donotreply-|
+|[X]|Forms should also display 500 error messages|
+|[]|Admin page|
+|[]|Add SEO|
+|[]|Refactor counter to REACT|
+|[]|Create components page|
 
 ---
 

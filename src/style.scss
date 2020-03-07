@@ -762,7 +762,7 @@ span.carousel_titles {
   padding-bottom: 40px;
   text-align: center;
 }
-span.subtitle {
+.subtitle {
   display: block;
   width: 100%;
   text-align: center;
@@ -770,6 +770,7 @@ span.subtitle {
   font-weight: 700;
   letter-spacing: -1px;
   padding: 0 0 40px 0;
+  color: #b5af47;
 }
 .bottom_icon {
   background: url(/images/bottom_icons_frame.png) no-repeat center;
@@ -1993,24 +1994,5 @@ span.swirl_right_transparent {
     width: 90%;
     padding: 10px 0 0 5%;
     font-size: 12px;
-  }
-}
-
-.information {
-  text-align: left !important;
-  margin-top: 10px;
-  width: 40%;
-  margin-left: 10px;
-  &__name {
-    text-align: left !important;
-    padding: 0;
-    margin: 4px;
-  }
-  &__cousine {
-    font-style: italic;
-    font-weight: bold;
-    padding: 0;
-  }
-  &__address {
   }
 }

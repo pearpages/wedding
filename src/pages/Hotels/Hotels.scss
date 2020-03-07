@@ -8,6 +8,10 @@
     width: 500px;
     height: 400px;
   }
+  .address {
+    width: 40%;
+    padding: 10px 30px;
+  }
 }
 
 .small-button {
@@ -31,6 +35,9 @@
     }
     &__image {
       width: 100%;
+    }
+    .address {
+      padding: 10px;
     }
   }
 }
