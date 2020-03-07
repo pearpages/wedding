@@ -7,6 +7,7 @@ import {
   // BrideNGroom,
   // Blog,
   // Carousel,
+  Locations,
   Countdown,
   Slider,
   Recommendations
@@ -19,6 +20,7 @@ export function Home() {
       <Title hasBirds={false} texts={texts} />
       <Slider />
       <Countdown />
+      <Locations />
       <Recommendations />
       {/* <BrideNGroom /> */}
       {/* <Carousel texts={texts} /> */}
