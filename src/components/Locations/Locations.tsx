@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import "./Locations.scss";
 
 import { Texts } from "types";
 import { ROUTES } from "Routes";
@@ -49,7 +50,7 @@ function Location({
 export function Locations() {
   const texts: Texts = useContext(TextContext);
   return (
-    <div className="home_bottom">
+    <div className="locations home_bottom">
       <div className="full_width_centered">
         <div className="left12_first">
           <Location
@@ -58,7 +59,7 @@ export function Locations() {
             location={texts["santaMaria"].location}
             iframe={texts["santaMaria"].iframe}
             route={ROUTES.SANTA_MARIA_DE_TALLO}
-            icon={"/images/icon_location.png"}
+            icon={"/images/icon_music.png"}
           />
         </div>
         <div className="left12_last">
