@@ -103,7 +103,6 @@ export function Form() {
                     onChange={e => {
                       setPlusOne(e.target.value === "SI");
                       setIsValidSelector(e.target.checkValidity());
-                      console.log(e.target.value);
                     }}
                   >
                     <option value="">--SELECCIONA--</option>

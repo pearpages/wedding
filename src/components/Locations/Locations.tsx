@@ -28,7 +28,6 @@ function Location({
   image: string;
   gmaps: string;
 }) {
-  console.log(gmaps);
   return (
     <>
       <div className="bottom_icon">

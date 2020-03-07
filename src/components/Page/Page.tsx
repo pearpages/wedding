@@ -2,7 +2,6 @@ import React from "react";
 
 import { BigHeader } from "./BigHeader";
 import { Content } from "./Content";
-import { Locations } from "components";
 
 export enum MOD {
   MOD1 = "page_header_trans--mod1",
