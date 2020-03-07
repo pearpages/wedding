@@ -69,7 +69,12 @@
     },
     "description": "The Sant Marc country house represents the dream of opening the landscape and culture of La Cerdanya to those that have a desire to explore it in depth. From the classical construction of the country house, to the delicateness of the garden, the traditional activities and the local food, everything is planned to offer a complete experience to the independent travelers, the adventurous couples or the lively families that desire to go through a truly authentic encounter."
   },
-  "wedding": { "title": "{global.wedding}" },
+  "wedding": {
+    "title": "{global.wedding}",
+    "ceremony": "La celebración será al mediodía del sábado 12.",
+    "reception": "Tras la ceremonia, nos trasladaremos a un precioso Hotel en el centro del valle en donde seguir la fiesta.",
+    "howToArrive": ""
+  },
   "rsvp": { "title": "{global.rsvp}" },
   "presents": { "title": "{global.presents}" },
   "contact": {

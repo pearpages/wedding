@@ -4,8 +4,8 @@ import "./Wedding.scss";
 import comoLlegar from "./images/como-llegar.jpeg";
 import santMarc from "./images/sant-marc.jpeg";
 import tallo from "./images/tallo.jpeg";
-import { Page, MOD, HalfLeft, HalfRight } from "components";
-import { t, renderHtml, getImage } from "helpers";
+import { Page, MOD, HalfLeft, HalfRight, Address } from "components";
+import { t, getImage } from "helpers";
 
 const Row = ({ children }: { children: JSX.Element }) => (
   <div className="row">{children}</div>
@@ -22,11 +22,13 @@ export function Wedding() {
             </HalfLeft>
             <HalfRight title={t("global.ceremony")}>
               <>
-                <p>La celebración será al mediodía del sábado 12.</p>
-                <p
-                  className="address"
-                  {...renderHtml(t("santaMaria.location"))}
-                ></p>
+                <p>{t("wedding.ceremony")}</p>
+                <Address
+                  data={{
+                    title: t("santaMaria.location.name"),
+                    htmlBody: t("santaMaria.location.address")
+                  }}
+                />
               </>
             </HalfRight>
           </>
@@ -35,14 +37,13 @@ export function Wedding() {
           <>
             <HalfLeft title={t("global.reception")}>
               <>
-                <p>
-                  Tras la ceremonia, nos trasladaremos a un precioso Hotel en el
-                  centro del valle en donde seguir la fiesta.
-                </p>
-                <p
-                  className="address"
-                  {...renderHtml(t("santMarc.location"))}
-                ></p>
+                <p>{t("wedding.reception")}</p>
+                <Address
+                  data={{
+                    title: t("santMarc.location.name"),
+                    htmlBody: t("santMarc.location.address")
+                  }}
+                />
               </>
             </HalfLeft>
             <HalfRight>
@@ -56,7 +57,7 @@ export function Wedding() {
               <div className="image" {...getImage(comoLlegar)}></div>
             </HalfLeft>
             <HalfRight title={t("global.howtoGetThere")}>
-              {/* Explicació deom arribar */}
+              <p>{t("wedding.howToArrive")}</p>
             </HalfRight>
           </>
         </Row>
