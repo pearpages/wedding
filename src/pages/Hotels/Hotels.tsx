@@ -39,7 +39,7 @@ export function Hotels() {
           </>
         </Full>
         {hotels.map((hotel: HotelData, i: number) => (
-          <Full>
+          <Full key={i}>
             <Hotel key={i} data={hotel} />
           </Full>
         ))}

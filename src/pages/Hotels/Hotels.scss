@@ -25,7 +25,11 @@
   .hotel {
     flex-direction: column;
     align-items: start;
+    width: 92%;
     .information {
+      width: 100%;
+    }
+    &__image {
       width: 100%;
     }
   }

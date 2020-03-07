@@ -67,6 +67,7 @@ export const getSymbol = (value: number, symbol: string): string => {
 export const getImage = (imagePath: string) => ({
   style: {
     background: "url(" + imagePath + ")",
-    backgroundSize: "cover"
+    backgroundSize: "cover",
+    backgroundPosition: "center center"
   }
 });
