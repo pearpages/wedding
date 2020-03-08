@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import "./Navigation.scss";
 import { Route } from "types";
 import { ROUTE_MAPPING } from "Routes";
 
