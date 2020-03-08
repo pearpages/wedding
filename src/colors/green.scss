@@ -77,17 +77,6 @@ ul#main_menu li a:hover,
   background: url(/images/menu_bullet.png) no-repeat left;
 }
 
-@media screen and (max-width: 680px) {
-  nav.menu {
-    background-color: #b5af47;
-  }
-  ul#main_menu li a.selected,
-  ul#main_menu li a:hover,
-  .footer_menu li {
-    background: none;
-  }
-}
-
 .link {
   color: #999700;
 }
