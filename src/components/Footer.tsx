@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { appendScriptInTheDOM } from "helpers";
 import { TextContext } from "core";
@@ -29,7 +29,7 @@ export function Footer() {
         <div className="footer_names" style={{ display: "none" }}>
           {texts.global.bride} &amp; {texts.global.groom}
         </div>
-        <div className="footer_socials">
+        {/* <div className="footer_socials">
           <ul>
             <li>
               <Link to="/">
@@ -67,7 +67,7 @@ export function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
         <nav className="footer_menu">
           <ul>
             {ROUTE_MAPPING.map((route: Route) => (
