@@ -1,0 +1,115 @@
+.show_menu {
+  display: none;
+}
+.hide_menu {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .show_menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    z-index: 99999;
+  }
+  .hide_menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    z-index: 99999;
+  }
+  nav.menu {
+    padding: 20px 4%;
+    margin: 0 4%;
+    width: 84%;
+    height: auto;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    z-index: 9999999999;
+    clear: both;
+    float: left;
+    &--visible {
+      display: block;
+    }
+  }
+  ul#main_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+  }
+  ul#main_menu * {
+    margin: 0;
+    padding: 0;
+  }
+  ul#main_menu li {
+    width: 95%;
+    position: relative;
+    padding: 5px 0;
+    display: inline-block;
+    line-height: 20px;
+    background: url(/images/menu_border_bottom.png) no-repeat center bottom;
+  }
+  ul#main_menu li:last-child {
+    background: none;
+  }
+  ul#main_menu li a {
+    font-size: 14px;
+    line-height: 35px;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0 0 0 0px;
+    font-weight: 400;
+  }
+  ul#main_menu ul {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: none;
+    display: none;
+    opacity: 1;
+    list-style: none;
+  }
+  ul#main_menu ul li {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin: 0;
+    padding: 0 0 0 0;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+  }
+  ul#main_menu ul li a {
+    display: block;
+    padding: 0px;
+    font-size: 12px;
+    height: auto;
+    line-height: 30px;
+  }
+  ul#main_menu ul li a:hover {
+    background: none;
+    background-image: none;
+    color: #fff;
+  }
+  ul#main_menu li a.selected {
+    color: #000;
+    background: none;
+  }
+  ul#main_menu li a:hover {
+    color: #000;
+    background: none;
+  }
+  nav.menu {
+    background-color: #b5af47;
+  }
+  ul#main_menu li a.selected,
+  ul#main_menu li a:hover,
+  .footer_menu li {
+    background: none;
+  }
+}

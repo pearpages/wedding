@@ -71,21 +71,10 @@ span.carousel_titles {
   color: #d7d677;
 }
 
-ul#main_menu li a.selected,
-ul#main_menu li a:hover,
+.menu--desktop ul#main_menu > li > a.selected,
+.menu--desktop ul#main_menu > li > a:hover,
 .footer_menu li {
   background: url(/images/menu_bullet.png) no-repeat left;
-}
-
-@media screen and (max-width: 680px) {
-  nav.menu {
-    background-color: #b5af47;
-  }
-  ul#main_menu li a.selected,
-  ul#main_menu li a:hover,
-  .footer_menu li {
-    background: none;
-  }
 }
 
 .link {

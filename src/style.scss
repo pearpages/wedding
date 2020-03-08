@@ -21,7 +21,7 @@ Template:	Wedding Bells HTML,CSS Template
 	2-1 HEADINGS
 	2-2 GOOGLE FONTS
 3. LAYOUT
-4. MENU NAVIGATION
+4. MENU NAVIGATION -moved to its component-
 5. CONTENT
 	5-1. HOME PAGE COUPLE NAMES
 	5-2. SLIDER
@@ -256,79 +256,6 @@ span.countdown_amount,
   float: left;
   margin: 0 0 80px 0;
 }
-/*===============================================*/
-/* 4. MENU NAVIGATION	 						 */
-/*===============================================*/
-.show_menu {
-  display: none;
-}
-.hide_menu {
-  display: none;
-}
-nav.menu {
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  background: url(/images/menu_border_bottom.png) no-repeat center bottom;
-  height: 85px;
-  position: absolute;
-  top: 0px;
-  z-index: 9999;
-}
-ul#main_menu {
-  list-style: none;
-  margin: 0;
-  padding: 0px;
-}
-ul#main_menu * {
-  margin: 0;
-  padding: 0;
-}
-ul#main_menu li {
-  position: relative;
-  margin: 0 10px;
-  display: inline-block;
-}
-ul#main_menu li a {
-  font-size: 13px;
-  line-height: 85px;
-  display: inline-block;
-  color: #ffffff;
-  padding: 0 0 0 18px;
-  font-weight: 400;
-}
-ul#main_menu ul {
-  position: absolute;
-  top: 85px;
-  left: 0;
-  background: #f5f4f4;
-  display: none;
-  opacity: 0;
-  list-style: none;
-}
-ul#main_menu ul li {
-  position: relative;
-  width: 220px;
-  margin: 0;
-  padding: 0px;
-  height: 50px;
-  line-height: 50px;
-  text-align: left;
-}
-ul#main_menu ul li a {
-  display: block;
-  padding: 0 20px;
-  font-size: 13px;
-  color: #434343;
-  height: 50px;
-  line-height: 50px;
-}
-ul#main_menu ul li a:hover {
-  background-color: #e5e5e5;
-  background-image: none;
-  color: #434343;
-}
-
 /*===============================================*/
 /* 5. CONTENT       	 						 */
 /*===============================================*/
@@ -1551,101 +1478,7 @@ span.swirl_right_transparent {
     line-height: 35px;
     padding: 0 10px 20px 10px;
   }
-  .show_menu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 45%;
-    z-index: 99999;
-  }
-  .hide_menu {
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 45%;
-    z-index: 99999;
-  }
-  nav.menu {
-    padding: 20px 4%;
-    margin: 0 4%;
-    width: 84%;
-    height: auto;
-    text-align: center;
-    display: none;
-    position: absolute;
-    top: 85px;
-    left: 0px;
-    z-index: 9999999999;
-    clear: both;
-    float: left;
-  }
-  ul#main_menu {
-    list-style: none;
-    margin: 0;
-    padding: 0px;
-  }
-  ul#main_menu * {
-    margin: 0;
-    padding: 0;
-  }
-  ul#main_menu li {
-    width: 95%;
-    position: relative;
-    padding: 5px 0;
-    display: inline-block;
-    line-height: 20px;
-    background: url(/images/menu_border_bottom.png) no-repeat center bottom;
-  }
-  ul#main_menu li:last-child {
-    background: none;
-  }
-  ul#main_menu li a {
-    font-size: 14px;
-    line-height: 35px;
-    display: inline-block;
-    color: #ffffff;
-    padding: 0 0 0 0px;
-    font-weight: 400;
-  }
-  ul#main_menu ul {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    background: none;
-    display: none;
-    opacity: 1;
-    list-style: none;
-  }
-  ul#main_menu ul li {
-    position: relative;
-    width: 95%;
-    height: auto;
-    margin: 0;
-    padding: 0 0 0 0;
-    line-height: 30px;
-    text-align: center;
-    background: none;
-  }
-  ul#main_menu ul li a {
-    display: block;
-    padding: 0px;
-    font-size: 12px;
-    height: auto;
-    line-height: 30px;
-  }
-  ul#main_menu ul li a:hover {
-    background: none;
-    background-image: none;
-    color: #fff;
-  }
-  ul#main_menu li a.selected {
-    color: #000;
-    background: none;
-  }
-  ul#main_menu li a:hover {
-    color: #000;
-    background: none;
-  }
+
   .full_width {
     width: 100%;
     padding: 0px 0 40px 0;
