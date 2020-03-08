@@ -71,8 +71,8 @@ span.carousel_titles {
   color: #d7d677;
 }
 
-ul#main_menu li a.selected,
-ul#main_menu li a:hover,
+.menu--desktop ul#main_menu > li > a.selected,
+.menu--desktop ul#main_menu > li > a:hover,
 .footer_menu li {
   background: url(/images/menu_bullet.png) no-repeat left;
 }

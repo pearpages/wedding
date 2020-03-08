@@ -20,18 +20,14 @@ export function Desktop() {
   const [isRecommendationsVisible, setRecommendationsVisible] = useState(false);
   return (
     <>
-      <span className="show_menu">
-        <img src="images/mobile_menu_open.png" alt="open" />
-      </span>
-      <span className="hide_menu">
-        <img src="images/mobile_menu_close.png" alt="close" />
-      </span>
-
-      <nav className="menu">
+      <nav className="menu menu--desktop">
         <ul id="main_menu">
           {ROUTE_MAPPING.map((route: Route) => {
             return (
-              <li key={route.label}>
+              <li
+                key={route.label}
+                onMouseEnter={() => setRecommendationsVisible(false)}
+              >
                 <NavLink
                   exact
                   activeClassName={route.isAnchor ? "none" : "selected"}
