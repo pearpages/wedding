@@ -105,3 +105,30 @@ span.carousel_titles {
   color: #b5af47;
   cursor: not-allowed;
 }
+
+@media screen and (max-width: 600px) {
+  .small-button {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    padding: 16px !important;
+  }
+  .post_read_more {
+    box-sizing: border-box;
+    width: 100% !important;
+    font-size: 18px;
+  }
+  .form_submit_contact {
+    width: 100% !important;
+  }
+}
+.small-button {
+  background-color: #b5af47;
+  color: white;
+  padding: 8px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 6px;
+  text-align: center;
+  margin: 8px 0;
+}

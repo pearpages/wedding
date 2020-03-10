@@ -14,17 +14,6 @@
   }
 }
 
-.small-button {
-  background-color: #b5af47;
-  color: white;
-  padding: 8px;
-  display: inline-block;
-  margin: auto;
-  border-radius: 6px;
-  text-align: center;
-  margin: 8px 0;
-}
-
 @media (max-width: 750px) {
   .hotel {
     flex-direction: column;
@@ -38,6 +27,7 @@
     }
     .address {
       padding: 10px;
+      width: 100%;
     }
   }
 }
