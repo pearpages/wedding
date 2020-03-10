@@ -15,18 +15,18 @@
     padding: 0;
   }
   &__body {
-    margin: -38px 0 0 38px;
-    padding: 0 !important;
+    margin: 10px 0;
+    padding-left: 40px;
+    box-sizing: border-box;
     text-align: left !important;
-    min-height: 88px;
+    position: relative;
     &::before {
       content: url(/images/icon_location.png);
       display: block;
       width: 38px;
       height: 38px;
-      position: relative;
-      left: -42px;
-      top: 48px;
+      left: 0px;
+      position: absolute;
     }
     .gmaps {
       text-decoration: underline;
