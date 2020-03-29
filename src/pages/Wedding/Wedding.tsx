@@ -5,7 +5,7 @@ import comoLlegar from "./images/como-llegar.jpeg";
 import santMarc from "./images/sant-marc.jpeg";
 import tallo from "./images/tallo.jpeg";
 import { Page, MOD, HalfLeft, HalfRight, Address } from "components";
-import { t, getImage } from "helpers";
+import { t, getImage, renderHtml } from "helpers";
 
 const Row = ({ children }: { children: JSX.Element }) => (
   <div className="row">{children}</div>
@@ -57,7 +57,7 @@ export function Wedding() {
               <div className="image" {...getImage(comoLlegar)}></div>
             </HalfLeft>
             <HalfRight title={t("global.howtoGetThere")}>
-              <p>{t("wedding.howToArrive")}</p>
+              <div {...renderHtml(t("wedding.howToArrive"))}></div>
             </HalfRight>
           </>
         </Row>
