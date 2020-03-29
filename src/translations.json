@@ -78,7 +78,10 @@
     "howToArrive": "<h4>Desde Barcelona</h4><p>Coger la C-16 dirección Manresa y continuar hasta atravesar el Tunel del Cadí (incluye peajes).</p><h4>Desde el aeropuerto de El Prat</h4><p>A la salida del aeropueto coger la C31 dirección Barcelona. Tomar la salida 196AB hacia Girona/Lleida. Continuar por la A-2 hasta incorporase a la E-90/B-23. Coger la salida a la derecha dirección E-15/AP-7/Girona/B-30/Rubí-Sant Cugat/E-9/C-16/Manresa. Continuar por la C-16 dirección Manresa hasta atravesar el Tunel del Cadí (incluye peajes).</p>"
   },
   "rsvp": { "title": "{global.rsvp}" },
-  "presents": { "title": "{global.presents}" },
+  "presents": {
+    "title": "{global.presents}",
+    "body": "El regalo es opcional, la asistencia es obligatoria, pero si quieres tener un detalle con nosotros, que mejor regalo que nuestra luna de miel."
+  },
   "contact": {
     "title": "{global.contact}",
     "subTitle": "Por favor, no dudes en contactarnos para cualquier duda",
