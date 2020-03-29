@@ -4,6 +4,7 @@ import hotelRoca from "./images/HOTEL-ROCA-ALP.jpg";
 import hotelTerminus from "./images/HOTEL-TERMINUS.jpg";
 import hotelViaPaulita from "./images/HOTEL-VILLA-PAULITA.jpg";
 import puigcerdaPark from "./images/PUIGCERDA-PARK-HOTEL.jpg";
+import hotelMoixero from "./images/Hotel-Moixero.jpg";
 
 export interface Hotel {
   name: string;
@@ -68,5 +69,14 @@ export const hotels: Hotel[] = [
       "https://www.booking.com/hotel/es/hospes-villa-paulita.es.html?aid=376371;label=es-JCB2UqznXtCO_RDP_nj5CAS410545262609%3Apl%3Ata%3Ap1%3Ap22.655.000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp20270%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Ye8F2ouj63ytkBtrYs5TAfs;sid=9c24ec2c0de6b949253016a91027974e;atlas_src=sr_iw_btn;checkin=2020-09-10;checkout=2020-09-13;dest_id=3253;dest_type=region;dist=0;group_adults=2;group_children=0;highlighted_blocks=9470117_88494127_2_2_0;nflt=ht_id%3D204%3B;no_rooms=1;room1=A%2CA;sb_price_type=total;type=total;ucfs=1&#_",
     price: 3,
     image: hotelViaPaulita
+  },
+  {
+    name: "Hotel Moixero",
+    stars: 2,
+    address: "Ctra. Alp a bellver, S/N K.6.6, 25721 Prats i Sansor",
+    booking:
+      " https://www.booking.com/hotel/es/husamoixero.es.html?aid=398438;label=iefav;sid=e771e4c5ee76aebfc2961ae11733e841;dest_id=3253;dest_type=region;room1=A%2CA&;group_adults=2;group_children=0;no_rooms=1;checkin=2020-09-11;checkout=2020-09-13;highlighted_blocks=9152502_232300099_2_34_0;atlas_src=sr_iw_btn;from_sr_map=1;from=searchresults;ucfs=1",
+    price: 1,
+    image: hotelMoixero
   }
 ];
