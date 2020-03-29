@@ -64,10 +64,18 @@ export const getSymbol = (value: number, symbol: string): string => {
   return array.join("");
 };
 
-export const getImage = (imagePath: string) => ({
+export enum backgroundSize {
+  cover = "cover",
+  contain = "contain"
+}
+
+export const getImage = (
+  imagePath: string,
+  size: backgroundSize = backgroundSize.cover
+) => ({
   style: {
     backgroundImage: "url(" + imagePath + ")",
-    backgroundSize: "cover",
+    backgroundSize: size,
     backgroundPosition: "center center"
   }
 });
