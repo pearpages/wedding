@@ -7,5 +7,7 @@
   }
 }
 .menu--mobile {
+  position: fixed !important;
   display: none;
+  box-shadow: 0px 17px 20px 0px #000;
 }
