@@ -9,7 +9,8 @@ export enum MOD {
   MOD3 = "page_header_trans--mod3",
   MOD4 = "page_header_trans--mod4",
   MOD5 = "page_header_trans--mod5",
-  MOD6 = "page_header_trans--mod6"
+  MOD6 = "page_header_trans--mod6",
+  MOD7 = "page_header_trans--mod7"
 }
 
 export function Page({

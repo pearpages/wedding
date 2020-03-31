@@ -4,7 +4,7 @@ import { TextContext } from "core";
 import { Texts } from "types";
 import {
   Title,
-  // BrideNGroom,
+  BrideNGroom,
   // Blog,
   // Carousel,
   Locations,
@@ -20,9 +20,9 @@ export function Home() {
       <Title hasBirds={false} texts={texts} />
       <Slider />
       <Countdown />
+      <BrideNGroom />
       <Locations />
       <Recommendations />
-      {/* <BrideNGroom /> */}
       {/* <Carousel texts={texts} /> */}
       {/* <Blog /> */}
     </>

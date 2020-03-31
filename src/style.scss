@@ -4,6 +4,7 @@ $image3: "https://d16jncjlowucvw.cloudfront.net/slider/slide3_ewhgf3.jpg";
 $image4: "/images/recommendations/alojamiento.jpeg";
 $image5: "/images/recommendations/restaurantes.jpeg";
 $image6: "/images/recommendations/planes.jpeg";
+$image7: "/images/recommendations/tanzania.jpg";
 /*------------------------------------------------------------------
 [Main Stylesheet]
 
@@ -1039,6 +1040,11 @@ img.avatar {
   }
   &--mod6 {
     background: url($image6) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &--mod7 {
+    background: url($image7) no-repeat;
     background-size: cover;
     background-position: center center;
   }
