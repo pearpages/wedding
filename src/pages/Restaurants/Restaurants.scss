@@ -2,10 +2,8 @@
   display: flex;
   align-items: flex-end;
   &__image {
-    border: 14px solid #ccc;
-    border-radius: 6px;
-    width: 300px;
-    height: 275px;
+    width: 300px !important;
+    height: 275px !important;
     background-color: black;
   }
   .address {
