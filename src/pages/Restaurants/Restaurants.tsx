@@ -9,7 +9,10 @@ import { getSymbol, getImage } from "helpers";
 
 const Restaurant = ({ restaurant }: { restaurant: RestaurantData }) => (
   <div className="restaurant">
-    <div className="restaurant__image" {...getImage(restaurant.image)}></div>
+    <div
+      className="image restaurant__image"
+      {...getImage(restaurant.image)}
+    ></div>
     <Address
       data={{
         title: `${restaurant.name} ${getSymbol(restaurant.price, "€")}`,

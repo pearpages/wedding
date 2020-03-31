@@ -1,11 +1,28 @@
 .iban {
-  max-width: 300px;
+  max-width: 400px;
   padding: 8px;
   text-align: center;
   margin: auto;
   border: 2px solid #ccc;
+  font-size: 18px;
+  font-weight: bold;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 680px) {
+    &__code {
+      display: inline-block;
+      margin: 10px;
+    }
+    &__button {
+      margin: 0 !important;
+    }
+  }
+  @media screen and (min-width: 681px) {
+    &__button {
+      margin: 0 0 0 10px !important;
+    }
+  }
   &__button {
-    margin: 0 0 0 10px !important;
     cursor: pointer;
   }
 }

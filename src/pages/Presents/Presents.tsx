@@ -13,11 +13,11 @@ export function Presents() {
     document.execCommand("copy");
   };
   return (
-    <Page title={t("presents.title")} mod={MOD.MOD3}>
-      <>
+    <Page title={t("presents.title")} mod={MOD.MOD7}>
+      <div className="blog_single">
         <p>{t("presents.body")}</p>
         <div className="iban">
-          <span className="iban__code">{IBAN}</span>{" "}
+          <span className="iban__code">{IBAN}</span>
           <button onClick={handleClick} className="iban__button small-button">
             Copiar
           </button>
@@ -30,7 +30,7 @@ export function Presents() {
           id=""
           value={IBAN}
         ></textarea>
-      </>
+      </div>
     </Page>
   );
 }
