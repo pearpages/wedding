@@ -17,7 +17,7 @@ function Location({
   route,
   icon,
   image,
-  gmaps
+  gmaps,
 }: {
   title: string;
   subtitle: string;
@@ -35,12 +35,14 @@ function Location({
       </div>
       <h2>{title}</h2>
       <h3 className="subtitle">{subtitle}</h3>
-      <Map image={image} />
+      <a href={gmaps} target="_blank" rel="noopener noreferrer">
+        <Map image={image} />
+      </a>
       <Address
         data={{
           title: location.name,
           htmlBody: location.address,
-          gmaps: gmaps
+          gmaps: gmaps,
         }}
       />
       <ReadMore route={route} />
