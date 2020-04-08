@@ -5,12 +5,12 @@ import { Texts } from "types";
 import {
   Title,
   BrideNGroom,
-  // Blog,
+  Blog,
   // Carousel,
   Locations,
   Countdown,
   Slider,
-  Recommendations
+  Recommendations,
 } from "components";
 
 export function Home() {
@@ -20,11 +20,11 @@ export function Home() {
       <Title hasBirds={false} texts={texts} />
       <Slider />
       <Countdown />
-      <BrideNGroom />
+      {/* <BrideNGroom /> */}
+      <Blog />
       <Locations />
       <Recommendations />
       {/* <Carousel texts={texts} /> */}
-      {/* <Blog /> */}
     </>
   );
 }
