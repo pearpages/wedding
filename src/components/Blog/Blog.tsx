@@ -32,6 +32,19 @@ export function Blog() {
     <div className="full_width_centered">
       <div className="latest_posts">
         <h2>NOSOTROS</h2>
+        <div
+          style={{
+            fontSize: "26px",
+            fontWeight: 800,
+            margin: "-38px 0 21px 0",
+          }}
+        >
+          Marta{" "}
+          <span className="amp" style={{ color: "#b5af47", fontSize: "62px" }}>
+            &amp;
+          </span>{" "}
+          Pere{" "}
+        </div>
         <Post
           className={"left12_first"}
           src={japo}

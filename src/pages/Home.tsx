@@ -4,7 +4,7 @@ import { TextContext } from "core";
 import { Texts } from "types";
 import {
   Title,
-  BrideNGroom,
+  // BrideNGroom,
   Blog,
   // Carousel,
   Locations,
