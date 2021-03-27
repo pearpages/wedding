@@ -11,7 +11,7 @@ export function Countdown() {
       appendScriptInTheDOM("/js/jquery.countdown.js");
       if (($("#defaultCountdown") as any).countdown) {
         ($("#defaultCountdown") as any).countdown({
-          until: new Date(2020, 9 - 1, 12, 12),
+          until: new Date(2021, 6 - 1, 12, 12),
           format: "y-o-d-h"
         });
         clearInterval(done);
